@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/authors/</link>
+      <atom:link href="https://mneunhoe.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mneunhoe.github.io/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>https://mneunhoe.github.io/authors/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://mneunhoe.github.io/authors/admin/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/authors/admin/</guid>
+      <description>&lt;p&gt;I am a PhD Candidate and Research Associate at the chair of Political Science, Quantitative Methods in the Social Sciences at the University of Mannheim.&lt;/p&gt;
+
+&lt;p&gt;My research focuses on political methodology, where I am specifically interested in the application of deep learning algorithms to social science problems. My substantive interests include voting behavior, political campaigns and forecasting elections. For my research I implemented a large scale field experiment within a partisan campaign, I am also interested in Social Media data and contributed to the research with a large Voting Advice Application.&lt;/p&gt;
+
+&lt;p&gt;My work has been published in the &lt;em&gt;Politische Vierteljahresschrift (PVS)&lt;/em&gt; and in &lt;em&gt;Political Analysis&lt;/em&gt;. I also had the opportunity to present some of my recent work at the &lt;a href=&#34;https://www.methods-colloquium.com/single-post/2019/02/08/Marcel-Neunhoeffer-Flexible-Multiple-Imputation-for-Social-Science-using-Generative-Adversarial-Nets&#34; target=&#34;_blank&#34;&gt;International Methods Colloquium&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, I am co-founder, contributor and the visualizationist of &lt;a href=&#34;http://zweitstimme.org&#34; target=&#34;_blank&#34;&gt;zweitstimme.org&lt;/a&gt; &amp;ndash; a website that communicated a scientific forecast for the German Federal election 2017 to a broad audience.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lukas F. Stoetzer</title>
+      <link>https://mneunhoe.github.io/authors/lukas-f.-stoetzer/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/authors/lukas-f.-stoetzer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sebastian Sternberg</title>
+      <link>https://mneunhoe.github.io/authors/sebastian-sternberg/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/authors/sebastian-sternberg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simon Munzert</title>
+      <link>https://mneunhoe.github.io/authors/simon-munzert/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/authors/simon-munzert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thomas Gschwend</title>
+      <link>https://mneunhoe.github.io/authors/thomas-gschwend/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/authors/thomas-gschwend/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

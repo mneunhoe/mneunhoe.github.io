@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prediction | Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/tags/prediction/</link>
+      <atom:link href="https://mneunhoe.github.io/tags/prediction/index.xml" rel="self" type="application/rss+xml" />
+    <description>Prediction</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mneunhoe.github.io/img/icon-192.png</url>
+      <title>Prediction</title>
+      <link>https://mneunhoe.github.io/tags/prediction/</link>
+    </image>
+    
+    <item>
+      <title>Forecasting Elections in Multi-Party Systems: A Bayesian Approach Combining Polls and Fundamentals</title>
+      <link>https://mneunhoe.github.io/publication/pa_forecast-multiparty/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/pa_forecast-multiparty/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How Cross-Validation Can Go Wrong and What to Do About it.</title>
+      <link>https://mneunhoe.github.io/publication/pa_cross-validation/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/pa_cross-validation/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zweitstimme.org. A structural-dynamic forecasting model for German federal elections</title>
+      <link>https://mneunhoe.github.io/publication/pvs_zweitstimme/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/pvs_zweitstimme/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
