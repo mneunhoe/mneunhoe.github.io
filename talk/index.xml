@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recent &amp; Upcoming Talks | Marcel Neunhoeffer</title><link>https://mneunhoe.github.io/talk/</link><atom:link href="https://mneunhoe.github.io/talk/index.xml" rel="self" type="application/rss+xml"/><description>Recent &amp; Upcoming Talks</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 20 Jul 2018 13:00:00 +0000</lastBuildDate><image><url>https://mneunhoe.github.io/img/icon-192.png</url><title>Recent &amp; Upcoming Talks</title><link>https://mneunhoe.github.io/talk/</link></image><item><title>Poster Presentation - Deep Multiple Imputation - Using Mixture Density Networks to Impute Missing Values.</title><link>https://mneunhoe.github.io/talk/polmeth18/</link><pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/talk/polmeth18/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/talk/</link>
+      <atom:link href="https://mneunhoe.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 20 Jul 2018 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mneunhoe.github.io/img/icon-192.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://mneunhoe.github.io/talk/</link>
+    </image>
+    
+    <item>
+      <title>Poster Presentation - Deep Multiple Imputation - Using Mixture Density Networks to Impute Missing Values.</title>
+      <link>https://mneunhoe.github.io/talk/polmeth18/</link>
+      <pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/talk/polmeth18/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

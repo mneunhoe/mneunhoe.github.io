@@ -1,1 +1,176 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags | Marcel Neunhoeffer</title><link>https://mneunhoe.github.io/tags/</link><atom:link href="https://mneunhoe.github.io/tags/index.xml" rel="self" type="application/rss+xml"/><description>Tags</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 01 Mar 2019 00:00:00 +0000</lastBuildDate><image><url>https://mneunhoe.github.io/img/icon-192.png</url><title>Tags</title><link>https://mneunhoe.github.io/tags/</link></image><item><title>Bayesian</title><link>https://mneunhoe.github.io/tags/bayesian/</link><pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/bayesian/</guid><description/></item><item><title>Elections</title><link>https://mneunhoe.github.io/tags/elections/</link><pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/elections/</guid><description/></item><item><title>Prediction</title><link>https://mneunhoe.github.io/tags/prediction/</link><pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/prediction/</guid><description/></item><item><title>Uncertainty</title><link>https://mneunhoe.github.io/tags/uncertainty/</link><pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/uncertainty/</guid><description/></item><item><title>cross-validation</title><link>https://mneunhoe.github.io/tags/cross-validation/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/cross-validation/</guid><description/></item><item><title>Machine Learning</title><link>https://mneunhoe.github.io/tags/machine-learning/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/machine-learning/</guid><description/></item><item><title>replication</title><link>https://mneunhoe.github.io/tags/replication/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/replication/</guid><description/></item><item><title>Deep Learning</title><link>https://mneunhoe.github.io/tags/deep-learning/</link><pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/deep-learning/</guid><description/></item><item><title>missing data</title><link>https://mneunhoe.github.io/tags/missing-data/</link><pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/missing-data/</guid><description/></item><item><title>Data Visualization</title><link>https://mneunhoe.github.io/tags/data-visualization/</link><pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/data-visualization/</guid><description/></item><item><title>Public Outreach</title><link>https://mneunhoe.github.io/tags/public-outreach/</link><pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/public-outreach/</guid><description/></item><item><title>campaigns</title><link>https://mneunhoe.github.io/tags/campaigns/</link><pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/campaigns/</guid><description/></item><item><title>field experiment</title><link>https://mneunhoe.github.io/tags/field-experiment/</link><pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/field-experiment/</guid><description/></item><item><title>Voting behavior</title><link>https://mneunhoe.github.io/tags/voting-behavior/</link><pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/voting-behavior/</guid><description/></item><item><title>Demo</title><link>https://mneunhoe.github.io/tags/demo/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/demo/</guid><description/></item><item><title>Academic</title><link>https://mneunhoe.github.io/tags/academic/</link><pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/tags/academic/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/tags/</link>
+      <atom:link href="https://mneunhoe.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mneunhoe.github.io/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>https://mneunhoe.github.io/tags/</link>
+    </image>
+    
+    <item>
+      <title>Differential Privacy</title>
+      <link>https://mneunhoe.github.io/tags/differential-privacy/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/differential-privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generative Adversarial Networks</title>
+      <link>https://mneunhoe.github.io/tags/generative-adversarial-networks/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/generative-adversarial-networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://mneunhoe.github.io/tags/machine-learning/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Synthetic Data</title>
+      <link>https://mneunhoe.github.io/tags/synthetic-data/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/synthetic-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://mneunhoe.github.io/tags/privacy/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical Inference</title>
+      <link>https://mneunhoe.github.io/tags/statistical-inference/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/statistical-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical Utility</title>
+      <link>https://mneunhoe.github.io/tags/statistical-utility/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/statistical-utility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Visualization</title>
+      <link>https://mneunhoe.github.io/tags/data-visualization/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://mneunhoe.github.io/tags/deep-learning/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elections</title>
+      <link>https://mneunhoe.github.io/tags/elections/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/elections/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural Network</title>
+      <link>https://mneunhoe.github.io/tags/neural-network/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/neural-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prediction</title>
+      <link>https://mneunhoe.github.io/tags/prediction/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/prediction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public Outreach</title>
+      <link>https://mneunhoe.github.io/tags/public-outreach/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/public-outreach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncertainty</title>
+      <link>https://mneunhoe.github.io/tags/uncertainty/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/uncertainty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian</title>
+      <link>https://mneunhoe.github.io/tags/bayesian/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/bayesian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cross-validation</title>
+      <link>https://mneunhoe.github.io/tags/cross-validation/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/cross-validation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>replication</title>
+      <link>https://mneunhoe.github.io/tags/replication/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/replication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>missing data</title>
+      <link>https://mneunhoe.github.io/tags/missing-data/</link>
+      <pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/missing-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>https://mneunhoe.github.io/tags/demo/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>https://mneunhoe.github.io/tags/academic/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,11 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning | Marcel Neunhoeffer</title><link>https://mneunhoe.github.io/tags/machine-learning/</link><atom:link href="https://mneunhoe.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><description>Machine Learning</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Marcel Neunhoeffer</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate><image><url>https://mneunhoe.github.io/img/icon-192.png</url><title>Machine Learning</title><link>https://mneunhoe.github.io/tags/machine-learning/</link></image><item><title>How Cross-Validation Can Go Wrong and What to Do About it.</title><link>https://mneunhoe.github.io/publication/pa_cross-validation/</link><pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/publication/pa_cross-validation/</guid><description>&lt;div class=&#34;alert alert-note&#34;&gt;
-&lt;div&gt;
-Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-&lt;div&gt;
-Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Poster Presentation - Deep Multiple Imputation - Using Mixture Density Networks to Impute Missing Values.</title><link>https://mneunhoe.github.io/talk/polmeth18/</link><pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/talk/polmeth18/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning | Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/tags/machine-learning/</link>
+      <atom:link href="https://mneunhoe.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine Learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mneunhoe.github.io/img/icon-192.png</url>
+      <title>Machine Learning</title>
+      <link>https://mneunhoe.github.io/tags/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>Private Post-GAN Boosting</title>
+      <link>https://mneunhoe.github.io/publication/arxiv_pgb/</link>
+      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/arxiv_pgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Really Useful Synthetic Data -- A Framework to Evaluate the Quality of Differentially Private Synthetic Data</title>
+      <link>https://mneunhoe.github.io/publication/arxiv_useful-synth-data/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/arxiv_useful-synth-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Cross-Validation Can Go Wrong and What to Do About it.</title>
+      <link>https://mneunhoe.github.io/publication/pa_cross-validation/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/pa_cross-validation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poster Presentation - Deep Multiple Imputation - Using Mixture Density Networks to Impute Missing Values.</title>
+      <link>https://mneunhoe.github.io/talk/polmeth18/</link>
+      <pubDate>Fri, 20 Jul 2018 13:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/talk/polmeth18/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
