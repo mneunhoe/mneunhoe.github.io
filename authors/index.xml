@@ -5,81 +5,12 @@
     <link>https://mneunhoe.github.io/authors/</link>
       <atom:link href="https://mneunhoe.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
       <title>Authors</title>
       <link>https://mneunhoe.github.io/authors/</link>
     </image>
-    
-    <item>
-      <title></title>
-      <link>https://mneunhoe.github.io/authors/admin/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I am a Ph.D. Candidate and Research Associate at the chair of Political Science, Quantitative Methods in the Social Sciences at the University of Mannheim.&lt;/p&gt;
-
-&lt;p&gt;My research focuses on quantitative methodology, where I am specifically interested in the application of deep learning algorithms to social science problems.  Substantively, I am interested in the prediction of political behavior and the ethical implications of new trends in applied social science research like Big Data and Artificial Intelligence with a focus on privacy. I have published multiple papers in internationally renowned journals and through invited talks I got the chance to communicate the results of my research to international audiences.&lt;/p&gt;
-
-&lt;p&gt;Furthermore, I am co-founder, contributor and the visualizationist of &lt;a href=&#34;http://zweitstimme.org&#34; target=&#34;_blank&#34;&gt;zweitstimme.org&lt;/a&gt; &amp;ndash; a website that communicates a scientific forecast for German Federal elections to a broad audience.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cynthia Dwork</title>
-      <link>https://mneunhoe.github.io/authors/cynthia-dwork/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/cynthia-dwork/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zhiwei Steven Wu</title>
-      <link>https://mneunhoe.github.io/authors/zhiwei-steven-wu/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/zhiwei-steven-wu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Christian Arnold</title>
-      <link>https://mneunhoe.github.io/authors/christian-arnold/</link>
-      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/christian-arnold/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lukas F. Stoetzer</title>
-      <link>https://mneunhoe.github.io/authors/lukas-f.-stoetzer/</link>
-      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/lukas-f.-stoetzer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Simon Munzert</title>
-      <link>https://mneunhoe.github.io/authors/simon-munzert/</link>
-      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/simon-munzert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thomas Gschwend</title>
-      <link>https://mneunhoe.github.io/authors/thomas-gschwend/</link>
-      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/thomas-gschwend/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sebastian Sternberg</title>
-      <link>https://mneunhoe.github.io/authors/sebastian-sternberg/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/authors/sebastian-sternberg/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

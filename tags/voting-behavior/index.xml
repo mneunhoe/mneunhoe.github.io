@@ -1,1 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Voting behavior | Marcel Neunhoeffer</title><link>https://mneunhoe.github.io/tags/voting-behavior/</link><atom:link href="https://mneunhoe.github.io/tags/voting-behavior/index.xml" rel="self" type="application/rss+xml"/><description>Voting behavior</description><generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 01 Jul 2016 00:00:00 +0000</lastBuildDate><image><url>https://mneunhoe.github.io/img/icon-192.png</url><title>Voting behavior</title><link>https://mneunhoe.github.io/tags/voting-behavior/</link></image><item><title>A Partisan Treatment in a High Salience Election: Evidence from a Field Experiment in Germany</title><link>https://mneunhoe.github.io/publication/fe_letters/</link><pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate><guid>https://mneunhoe.github.io/publication/fe_letters/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Voting behavior | Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/tags/voting-behavior/</link>
+      <atom:link href="https://mneunhoe.github.io/tags/voting-behavior/index.xml" rel="self" type="application/rss+xml" />
+    <description>Voting behavior</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Fri, 01 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://mneunhoe.github.io/img/icon-192.png</url>
+      <title>Voting behavior</title>
+      <link>https://mneunhoe.github.io/tags/voting-behavior/</link>
+    </image>
+    
+  </channel>
+</rss>

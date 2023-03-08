@@ -5,20 +5,12 @@
     <link>https://mneunhoe.github.io/publication_types/3/</link>
       <atom:link href="https://mneunhoe.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 23 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
       <title>3</title>
       <link>https://mneunhoe.github.io/publication_types/3/</link>
     </image>
-    
-    <item>
-      <title>Private Post-GAN Boosting</title>
-      <link>https://mneunhoe.github.io/publication/arxiv_pgb/</link>
-      <pubDate>Thu, 23 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/publication/arxiv_pgb/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Really Useful Synthetic Data -- A Framework to Evaluate the Quality of Differentially Private Synthetic Data</title>
