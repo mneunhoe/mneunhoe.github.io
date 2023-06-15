@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3 | Marcel Neunhoeffer</title>
+    <title>3 | Dr. Marcel Neunhoeffer</title>
     <link>https://mneunhoe.github.io/publication_types/3/</link>
       <atom:link href="https://mneunhoe.github.io/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
       <title>3</title>
       <link>https://mneunhoe.github.io/publication_types/3/</link>
     </image>
+    
+    <item>
+      <title>Continual Release of Differentially Private Synthetic Data</title>
+      <link>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</link>
+      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrap-based, General-purpose Statistical Inference from Differential Private Releases</title>
+      <link>https://mneunhoe.github.io/publication/nber_dp-bootstrap/</link>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/nber_dp-bootstrap/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Really Useful Synthetic Data -- A Framework to Evaluate the Quality of Differentially Private Synthetic Data</title>
