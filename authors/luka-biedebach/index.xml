@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Christian Arnold | Dr. Marcel Neunhoeffer</title>
-    <link>https://mneunhoe.github.io/authors/christian-arnold/</link>
-      <atom:link href="https://mneunhoe.github.io/authors/christian-arnold/index.xml" rel="self" type="application/rss+xml" />
-    <description>Christian Arnold</description>
+    <title>Luka Biedebach | Dr. Marcel Neunhoeffer</title>
+    <link>https://mneunhoe.github.io/authors/luka-biedebach/</link>
+      <atom:link href="https://mneunhoe.github.io/authors/luka-biedebach/index.xml" rel="self" type="application/rss+xml" />
+    <description>Luka Biedebach</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
-      <title>Christian Arnold</title>
-      <link>https://mneunhoe.github.io/authors/christian-arnold/</link>
+      <title>Luka Biedebach</title>
+      <link>https://mneunhoe.github.io/authors/luka-biedebach/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>https://mneunhoe.github.io/publication/psrm_hyperparameter-tuning/</link>
       <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://mneunhoe.github.io/publication/psrm_hyperparameter-tuning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Really Useful Synthetic Data -- A Framework to Evaluate the Quality of Differentially Private Synthetic Data</title>
-      <link>https://mneunhoe.github.io/publication/arxiv_useful-synth-data/</link>
-      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/publication/arxiv_useful-synth-data/</guid>
       <description></description>
     </item>
     

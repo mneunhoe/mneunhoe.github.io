@@ -5,12 +5,20 @@
     <link>https://mneunhoe.github.io/publication/</link>
       <atom:link href="https://mneunhoe.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
       <title>Publications</title>
       <link>https://mneunhoe.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>The Role of Hyperparameters in Machine Learning Models and How to Tune Them</title>
+      <link>https://mneunhoe.github.io/publication/psrm_hyperparameter-tuning/</link>
+      <pubDate>Wed, 05 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/psrm_hyperparameter-tuning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>How to Improve the Substantive Interpretation of Regression Results when the Dependent Variable is Logged</title>
