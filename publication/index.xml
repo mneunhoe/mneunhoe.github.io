@@ -5,12 +5,20 @@
     <link>https://mneunhoe.github.io/publication/</link>
       <atom:link href="https://mneunhoe.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Wed, 05 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2024 Marcel Neunhoeffer</copyright><lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
       <title>Publications</title>
       <link>https://mneunhoe.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Continual Release of Differentially Private Synthetic Data from Longitudinal Data Collections</title>
+      <link>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</link>
+      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The Role of Hyperparameters in Machine Learning Models and How to Tune Them</title>
@@ -25,14 +33,6 @@
       <link>https://mneunhoe.github.io/publication/psrm_logged-dv/</link>
       <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://mneunhoe.github.io/publication/psrm_logged-dv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Continual Release of Differentially Private Synthetic Data</title>
-      <link>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</link>
-      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</guid>
       <description></description>
     </item>
     

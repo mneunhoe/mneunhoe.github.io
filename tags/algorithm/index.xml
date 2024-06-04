@@ -5,7 +5,7 @@
     <link>https://mneunhoe.github.io/tags/algorithm/</link>
       <atom:link href="https://mneunhoe.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <description>Algorithm</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2023 Marcel Neunhoeffer</copyright><lastBuildDate>Wed, 14 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2024 Marcel Neunhoeffer</copyright><lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://mneunhoe.github.io/img/icon-192.png</url>
       <title>Algorithm</title>
@@ -13,9 +13,9 @@
     </image>
     
     <item>
-      <title>Continual Release of Differentially Private Synthetic Data</title>
+      <title>Continual Release of Differentially Private Synthetic Data from Longitudinal Data Collections</title>
       <link>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</link>
-      <pubDate>Wed, 14 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       <guid>https://mneunhoe.github.io/publication/arxiv_continual-dp-synth-data/</guid>
       <description></description>
     </item>
