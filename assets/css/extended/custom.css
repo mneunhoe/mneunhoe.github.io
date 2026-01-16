@@ -1,0 +1,8 @@
+/* Make all pages use the grey background */
+body {
+    background: var(--code-bg);
+}
+
+[data-theme="dark"] body {
+    background: var(--theme);
+}

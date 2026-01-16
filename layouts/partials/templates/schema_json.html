@@ -1,0 +1,181 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Marcel Neunhoeffer",
+  "givenName": "Marcel",
+  "familyName": "Neunhoeffer",
+  "honorificPrefix": "Dr.",
+  "url": {{ site.Home.Permalink }},
+  "image": {{ "img/portrait.jpg" | absURL }},
+  "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
+  "jobTitle": "Postdoctoral Researcher",
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Institute for Employment Research (IAB)",
+      "url": "https://iab.de/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Ludwig Maximilian University of Munich",
+      "url": "https://www.lmu.de/"
+    }
+  ],
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "Institute for Employment Research (IAB)",
+      "department": "Statistical Methods Unit"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Ludwig Maximilian University of Munich",
+      "department": "Chair for Statistics and Data Science in Social Sciences and the Humanities"
+    }
+  ],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Mannheim",
+      "url": "https://www.uni-mannheim.de/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Boston University",
+      "url": "https://www.bu.edu/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of California, Berkeley",
+      "url": "https://www.berkeley.edu/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Passau",
+      "url": "https://www.uni-passau.de/"
+    }
+  ],
+  "knowsAbout": [
+    "Differential Privacy",
+    "Privacy-Preserving AI",
+    "Synthetic Data Generation",
+    "Generative Adversarial Networks",
+    "Machine Learning",
+    "Deep Learning",
+    "Multiple Imputation",
+    "Missing Data",
+    "Election Forecasting",
+    "Computational Social Science",
+    "Trustworthy AI"
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "PhD",
+    "educationalLevel": "Doctoral",
+    "name": "Ph.D. in Social Sciences",
+    "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Mannheim"
+    }
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/marcel-neunhoeffer/",
+    "https://scholar.google.com/citations?user=Q491RXUAAAAJ&hl=en",
+    "https://github.com/mneunhoe",
+    "https://iab.de/mitarbeiter/neunhoeffer-marcel/"
+  ]
+}
+</script>
+{{- else if (or .IsPage .IsSection) }}
+{{/* BreadcrumbList */}}
+{{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
+{{- $lang_url := strings.TrimPrefix ( printf "%s/" .Lang) $url }}
+{{- $bc_list := (split $lang_url "/")}}
+
+{{- $scratch := newScratch }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+  {{- range $index, $element := $bc_list }}
+
+    {{- $scratch.Add "path" (printf "%s/" $element ) | safeJS }}
+    {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
+
+    {{- if (and ($bc_pg) (gt (len . ) 0))}}
+    {{- if (and $index)}}, {{end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add 1 $index  }},
+      "name": {{ $bc_pg.Name }},
+      "item": {{ $bc_pg.Permalink | safeHTML }}
+    }
+    {{- end }}
+
+  {{- end }}
+  {{- /*  self-page addition  */ -}}
+  {{- if (ge (len $bc_list) 2) }}, {{end }}
+    {
+      "@type": "ListItem",
+      "position": {{len $bc_list}},
+      "name": {{ .Name }},
+      "item": {{ .Permalink | safeHTML }}
+    }
+  ]
+}
+</script>
+{{- if .IsPage }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": {{ .Title | plainify}},
+  "name": "{{ .Title | plainify }}",
+  "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify  }}{{ end -}},
+  "keywords": [
+    {{- if .Params.keywords }}
+    {{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+    {{- else }}
+    {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}
+    {{- end }}
+  ],
+  "articleBody": {{ .Content | safeJS | htmlUnescape | plainify }},
+  "wordCount" : "{{ .WordCount }}",
+  "inLanguage": {{ .Language.Lang | default "en-us" }},
+  {{ if .Params.cover.image -}}
+  "image":
+    {{- if (ne .Params.cover.relative true) -}}
+    {{ .Params.cover.image | absURL }},
+    {{- else -}}
+    {{ (path.Join .RelPermalink .Params.cover.image ) | absURL }},
+    {{- end}}
+  {{- else }}
+    {{- $images := partial "templates/_funcs/get-page-images" . -}}
+    {{- with index $images 0 -}}
+  "image": {{ .Permalink }},
+    {{- end }}
+  {{- end -}}
+  "datePublished": {{ .PublishDate }},
+  "dateModified": {{ .Lastmod }},
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Marcel Neunhoeffer",
+    "url": {{ site.Home.Permalink }}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | safeHTML }}
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Dr. Marcel Neunhoeffer",
+    "image": {{ "img/portrait.jpg" | absURL }}
+  }
+}
+</script>
+{{- end }}{{/* .IsPage end */}}
+
+{{- end -}}

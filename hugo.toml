@@ -1,0 +1,172 @@
+baseURL = "https://mneunhoe.github.io/"
+title = "Dr. Marcel Neunhoeffer"
+theme = "PaperMod"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+# Site settings
+[pagination]
+  pagerSize = 10
+enableEmoji = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# Copyright
+copyright = "Marcel Neunhoeffer"
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  author = "Marcel Neunhoeffer"
+
+  # Schema.org configuration for GEO
+  [params.schema]
+    publisherType = "Person"
+  description = "Dr. Marcel Neunhoeffer - Privacy-Preserving AI Researcher | Synthetic Data | Differential Privacy | Bridging Statistics, Computer Science & Social Science"
+  keywords = ["Generative AI", "Differential Privacy", "Synthetic Data", "Privacy-Preserving AI", "Generative Adversarial Networks", "GANs", "Trustworthy AI", "Machine Learning", "Deep Learning", "Multiple Imputation", "AI Safety"]
+
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = false
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  # Profile mode for homepage
+  [params.profileMode]
+    enabled = true
+    title = "Dr. Marcel Neunhoeffer"
+    subtitle = "Researcher | Privacy-Preserving Synthetic Data | Bridging Statistics, CS & Social Science"
+    imageUrl = "img/portrait.jpg"
+    imageWidth = 200
+    imageHeight = 200
+    imageTitle = "Marcel Neunhoeffer"
+
+    [[params.profileMode.buttons]]
+      name = "Publications"
+      url = "/publications/"
+    [[params.profileMode.buttons]]
+      name = "Software"
+      url = "/software/"
+    [[params.profileMode.buttons]]
+      name = "Teaching"
+      url = "/teaching/"
+    [[params.profileMode.buttons]]
+      name = "About"
+      url = "/about/"
+    [[params.profileMode.buttons]]
+      name = "CV"
+      url = "pdf/academic-cv-neunhoeffer.pdf"
+
+  # Social icons
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:marcel@marcel-neunhoeffer.com"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/marcel-neunhoeffer/"
+  [[params.socialIcons]]
+    name = "googlescholar"
+    url = "https://scholar.google.com/citations?user=Q491RXUAAAAJ&hl=en"
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/mneunhoe"
+
+  # Cover image
+  [params.cover]
+    hidden = true
+    hiddenInList = true
+    hiddenInSingle = true
+
+  # Favicon
+  [params.assets]
+    favicon = "img/icon-32.png"
+    favicon16x16 = "img/icon-32.png"
+    favicon32x32 = "img/icon-32.png"
+    apple_touch_icon = "img/icon-192.png"
+
+  # OpenGraph / Twitter Cards
+  images = ["img/portrait.jpg"]
+
+  # Edit post
+  [params.editPost]
+    disabled = true
+
+  # Search
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 10
+  [[menu.main]]
+    identifier = "teaching"
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 20
+  [[menu.main]]
+    identifier = "software"
+    name = "Software"
+    url = "/software/"
+    weight = 25
+  [[menu.main]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/talks/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 50
+
+# Outputs for search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Markup settings
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
