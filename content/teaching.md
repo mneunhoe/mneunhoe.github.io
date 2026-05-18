@@ -8,31 +8,35 @@ ShowBreadCrumbs: false
 hideMeta: true
 ---
 
+## Diplomatische Akademie, Wien
+
+- **Machine Learning**, Graduate, [Syllabus](/pdf/syllabus/DA_26.pdf), [Evaluation Spring 2026](/pdf/eval/DA_26.pdf)
+
 ## University of Mannheim
 
-- **Multivariate Analyses**, Graduate, [Syllabus](pdf/syllabus/QM_1819.pdf)
-  Evaluations: [2016](pdf/eval/QM_1617.pdf), [2017](pdf/eval/QM_1718.pdf), [2018](pdf/eval/QM_1819.pdf), [2019](pdf/eval/QM_1920.pdf), 2020
+- **Multivariate Analyses**, Graduate, [Syllabus](/pdf/syllabus/QM_1819.pdf)
+  Evaluations: [2016](/pdf/eval/QM_1617.pdf), [2017](/pdf/eval/QM_1718.pdf), [2018](/pdf/eval/QM_1819.pdf), [2019](/pdf/eval/QM_1920.pdf), 2020
 
-- **Advanced Quantitative Methods**, Graduate, [Syllabus](pdf/syllabus/AQM_19.pdf)
-  Evaluations: [2017](pdf/eval/AQM_17.pdf), [2018](pdf/eval/AQM_18.pdf), 2019, 2020
+- **Advanced Quantitative Methods**, Graduate, [Syllabus](/pdf/syllabus/AQM_19.pdf)
+  Evaluations: [2017](/pdf/eval/AQM_17.pdf), [2018](/pdf/eval/AQM_18.pdf), [2019](/pdf/eval/AQM19.pdf), 2020
 
-## University of California, Berkeley (2020)
+## University of California, Berkeley
 
-- **Privacy Engineering**, Graduate, [Syllabus](pdf/syllabus/W233_20.pdf), [Evaluation Summer 2020](pdf/eval/W233_20.pdf)
+- **Privacy Engineering**, Graduate, [Syllabus](/pdf/syllabus/W233_20.pdf), [Evaluation Summer 2020](/pdf/eval/W233_20.pdf)
 
 ## University of Applied Sciences Ludwigshafen
 
-- **Applied Marketing Research**, Graduate (in German), [Syllabus](pdf/syllabus/HS_LU.pdf), [Evaluation Spring 2017](pdf/eval/HS_LU.pdf)
+- **Applied Marketing Research**, Graduate (in German), [Syllabus](/pdf/syllabus/HS_LU.pdf), [Evaluation Spring 2017](/pdf/eval/HS_LU.pdf)
 
 ## Professional Training Workshops
 
 - **June 2019:** Big Data and Social Science, 1 day workshop
   *GRADE - Goethe Research Academy for Early Career Researchers*, Frankfurt
 
-- **March 2019:** [Supervised and unsupervised Machine Learning and Deep Learning](pdf/MLWorkshop_bundesbank2019.pdf), 5 day workshop
+- **March 2019:** [Supervised and unsupervised Machine Learning and Deep Learning](/pdf/MLWorkshop_bundesbank2019.pdf), 5 day workshop
   *Bundesbank*, Frankfurt
 
-- **February 2018:** [Introduction to R](pdf/GQH_workshop_plan.pdf), 1 day workshop
+- **February 2018:** [Introduction to R](/pdf/GQH_workshop_plan.pdf), 1 day workshop
   *Geschäftsstelle für Qualitätssicherung Hessen*, Eschborn
 
 ---
