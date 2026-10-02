@@ -25,7 +25,7 @@ Beyond prediction, the package uses the models' predictive distributions for mul
 
 ## Research
 
-The package accompanies my working paper "Learning from Small Data: Tabular Foundation Models for Political Science", which evaluates TabPFN as the prediction step in forecasting, double machine learning and multiple imputation.
+The package accompanies my working paper ["Learning from Small Data: Tabular Foundation Models for Political Science"](/publications/wp_learning-from-small-data/), which evaluates TabPFN as the prediction step in forecasting, double machine learning and multiple imputation.
 
 ## Installation
 
