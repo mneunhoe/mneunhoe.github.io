@@ -1,6 +1,6 @@
 ---
 title: "On the Formal Privacy Guarantees of Synthetic Data (Generated Without Formal Privacy Guarantees)"
-date: 2025-08-20
+date: 2026-02-17
 summary: "Examining what privacy guarantees synthetic data can satisfy even without formal guarantees during synthesizer training."
 tags:
   - Differential Privacy
@@ -12,7 +12,7 @@ ShowToc: false
 
 **Authors:** Marcel Neunhoeffer, Jeremy Seeman, Jörg Drechsler
 
-**Published in:** Harvard Data Science Review, Special Issue 6: Data Privacy for Social Sciences (2025)
+**Published in:** Harvard Data Science Review, Special Issue 6: Data Privacy for Social Sciences (2026; online August 2025)
 
 **DOI:** [10.1162/99608f92.1af82b35](https://doi.org/10.1162/99608f92.1af82b35)
 

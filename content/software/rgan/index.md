@@ -1,7 +1,7 @@
 ---
 title: "RGAN: Generative Adversarial Networks in R"
 date: 2023-01-01
-summary: "R package for training Generative Adversarial Networks, available on CRAN with 8,300+ downloads."
+summary: "R package for training Generative Adversarial Networks, available on CRAN with 10,000+ downloads."
 tags:
   - R Package
   - GANs
@@ -19,7 +19,7 @@ ShowToc: false
 
 **Status:** Published on CRAN
 
-**Downloads:** 8,300+ (check current count on [CRAN logs](https://cranlogs.r-pkg.org/badges/grand-total/RGAN))
+**Downloads:** 10,000+ (check current count on [CRAN logs](https://cranlogs.r-pkg.org/badges/grand-total/RGAN))
 
 ## Overview
 
