@@ -2,7 +2,7 @@
 title: "Software"
 url: "/software/"
 summary: "Open-source software projects and packages"
-description: "Open-source R packages and research code for synthetic data generation, multiple imputation, and machine learning."
+description: "Open-source R packages and research code for tabular foundation models, synthetic data generation, multiple imputation, and party-system measurement."
 ShowBreadCrumbs: false
 ---
 

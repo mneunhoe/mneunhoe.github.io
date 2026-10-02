@@ -27,8 +27,8 @@ copyright = "Marcel Neunhoeffer"
   # Schema.org configuration for GEO
   [params.schema]
     publisherType = "Person"
-  description = "Dr. Marcel Neunhoeffer - Privacy-Preserving AI Researcher | Synthetic Data | Differential Privacy | Bridging Statistics, Computer Science & Social Science"
-  keywords = ["Generative AI", "Differential Privacy", "Synthetic Data", "Privacy-Preserving AI", "Generative Adversarial Networks", "GANs", "Trustworthy AI", "Machine Learning", "Deep Learning", "Multiple Imputation", "AI Safety"]
+  description = "Dr. Marcel Neunhoeffer - Statistics, Machine Learning & Political Methodology | Valid inference on data transformed by AI | Synthetic Data, Differential Privacy, Multiple Imputation, Tabular Foundation Models"
+  keywords = ["Statistical Inference", "Tabular Foundation Models", "TabPFN", "Double Machine Learning", "Causal Inference", "Political Methodology", "Differential Privacy", "Synthetic Data", "Privacy-Preserving AI", "Multiple Imputation", "Generative Adversarial Networks", "GANs", "Trustworthy AI", "Machine Learning", "Generative AI", "Election Forecasting"]
 
   defaultTheme = "auto"
   disableThemeToggle = false
@@ -52,7 +52,7 @@ copyright = "Marcel Neunhoeffer"
   [params.profileMode]
     enabled = true
     title = "Dr. Marcel Neunhoeffer"
-    subtitle = "Researcher | Privacy-Preserving Synthetic Data | Bridging Statistics, CS & Social Science"
+    subtitle = "Statistics, Machine Learning & Political Methodology | Valid Inference on Data That AI Has Transformed"
     imageUrl = "img/portrait.jpg"
     imageWidth = 200
     imageHeight = 200

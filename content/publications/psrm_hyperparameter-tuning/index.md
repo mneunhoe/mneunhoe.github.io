@@ -25,5 +25,5 @@ Hyperparameters critically influence how well machine learning models perform on
 
 ## Links
 
-- [PDF](pdf/papers/psrm_hyperparameter.pdf)
+- [PDF](/pdf/papers/psrm_hyperparameter.pdf)
 - [Replication Data](https://doi.org/10.7910/DVN/HLJW1Q)

@@ -7,7 +7,7 @@ tags:
   - Multiple Imputation
   - Missing Data
   - R Package
-weight: 2
+weight: 3
 cover:
   image: "featured.png"
   alt: "MIBench Benchmark"

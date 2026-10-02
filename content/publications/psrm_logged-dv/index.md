@@ -25,6 +25,6 @@ Regression models with log-transformed dependent variables are widely used by so
 
 ## Links
 
-- [PDF](pdf/papers/psrm_logged_dv.pdf)
+- [PDF](/pdf/papers/psrm_logged_dv.pdf)
 - [Code](https://github.com/mneunhoe/simloglm)
 - [Replication Data](https://doi.org/10.7910/DVN/KZWKT6)

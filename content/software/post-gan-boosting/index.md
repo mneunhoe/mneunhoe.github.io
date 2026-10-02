@@ -7,7 +7,7 @@ tags:
   - GANs
   - Synthetic Data
   - Replication Code
-weight: 3
+weight: 5
 cover:
   image: "featured.png"
   alt: "Post-GAN Boosting"

@@ -7,7 +7,7 @@ tags:
   - GANs
   - Deep Learning
   - Open Source
-weight: 1
+weight: 2
 cover:
   image: "featured.png"
   alt: "RGAN Package"
@@ -61,3 +61,4 @@ Many social scientists work primarily in R and face barriers when trying to use 
 - [CRAN](https://cran.r-project.org/package=RGAN)
 - [GitHub](https://github.com/mneunhoe/RGAN)
 - [Documentation](https://cran.r-project.org/web/packages/RGAN/RGAN.pdf)
+- [Paper: An Introduction to Generative Adversarial Nets in R (The R Journal, 2026)](/publications/rj_rgan/)

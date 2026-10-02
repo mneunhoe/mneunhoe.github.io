@@ -26,5 +26,5 @@ We offer a dynamic Bayesian forecasting model for multi-party elections. It comb
 
 ## Links
 
-- [PDF](pdf/papers/pa_forecast-multiparty.pdf)
+- [PDF](/pdf/papers/pa_forecast-multiparty.pdf)
 - [Code & Data](https://doi.org/10.7910/DVN/MLYNX0)

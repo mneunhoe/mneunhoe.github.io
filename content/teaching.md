@@ -12,12 +12,18 @@ hideMeta: true
 
 - **Machine Learning**, Graduate, [Syllabus](/pdf/syllabus/DA_26.pdf), [Evaluation Spring 2026](/pdf/eval/DA_26.pdf)
 
+## LMU Munich
+
+- **Applied Data Analytics for the Public Sector (ADA Bayern)**, Graduate and Professional (Fall 2023–Fall 2026)
+- **Data and Privacy: Theoretical and Empirical Challenges**, Graduate (Spring 2022)
+- **Statistics II for Sociologists**, Undergraduate (Spring 2021)
+
 ## University of Mannheim
 
-- **Multivariate Analyses**, Graduate, [Syllabus](/pdf/syllabus/QM_1819.pdf)
+- **Tutorials, Multivariate Analyses**, Graduate, [Syllabus](/pdf/syllabus/QM_1819.pdf)
   Evaluations: [2016](/pdf/eval/QM_1617.pdf), [2017](/pdf/eval/QM_1718.pdf), [2018](/pdf/eval/QM_1819.pdf), [2019](/pdf/eval/QM_1920.pdf), 2020
 
-- **Advanced Quantitative Methods**, Graduate, [Syllabus](/pdf/syllabus/AQM_19.pdf)
+- **Tutorials, Advanced Quantitative Methods**, Graduate, [Syllabus](/pdf/syllabus/AQM_19.pdf)
   Evaluations: [2017](/pdf/eval/AQM_17.pdf), [2018](/pdf/eval/AQM_18.pdf), [2019](/pdf/eval/AQM19.pdf), 2020
 
 ## University of California, Berkeley
@@ -28,7 +34,17 @@ hideMeta: true
 
 - **Applied Marketing Research**, Graduate (in German), [Syllabus](/pdf/syllabus/HS_LU.pdf), [Evaluation Spring 2017](/pdf/eval/HS_LU.pdf)
 
+## Supervision
+
+- **Katharina Julia Brenner** (M.A., LMU Munich, 2024): "Didaktische Ansätze für Stichprobentheorie im Archivwesen." Grade 1.0. The thesis resulted in a blended-learning course now taught at the Bavarian State Archives.
+
 ## Professional Training Workshops
+
+- **2022:** Generative Adversarial Networks
+  *Hertie School Data Science Summer School*
+
+- **2021:** Introduction to Machine Learning
+  *CIVICA Data Science Summer School*
 
 - **June 2019:** Big Data and Social Science, 1 day workshop
   *GRADE - Goethe Research Academy for Early Career Researchers*, Frankfurt

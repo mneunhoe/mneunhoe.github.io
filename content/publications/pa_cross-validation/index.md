@@ -26,5 +26,5 @@ The introduction of new "machine learning" methods and terminology to political 
 
 ## Links
 
-- [PDF](pdf/papers/pa_cross-validation.pdf)
+- [PDF](/pdf/papers/pa_cross-validation.pdf)
 - [Code & Data](https://doi.org/10.7910/DVN/Y9KMJW)
