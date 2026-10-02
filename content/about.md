@@ -21,7 +21,7 @@ I worked with the US Census Bureau on differentially private methods for officia
 
 As a co-founder and contributor to [zweitstimme.org](https://zweitstimme.org), I co-built a platform that communicates scientific election forecasts for German Federal elections to a broad audience, covered by major German media including Zeit Online, Tagesspiegel, and the Washington Post.
 
-With colleagues in the Social Data Science and AI Lab at LMU Munich, I co-lead Applied Data Analytics for the Public Sector (ADA Bayern), a data-literacy program run in partnership with and funded by the Bavarian State Ministry for Digital Affairs. Its projects often start with the question "can't we use AI for this?" For the Bavarian State Archives, a statistical sampling tool turned out to be the better answer, and it has been in use there since 2024.
+With colleagues in the Social Data Science and AI Lab at LMU Munich, I co-lead [Applied Data Analytics for the Public Sector (ADA Bayern)](https://ada-oeffentliche-verwaltung.de), a data-literacy program run in partnership with and funded by the Bavarian State Ministry for Digital Affairs. Its projects often start with the question "can't we use AI for this?" For the Bavarian State Archives, a statistical sampling tool turned out to be the better answer, and it has been in use there since 2024.
 
 ## Current Affiliations
 

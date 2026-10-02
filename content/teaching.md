@@ -14,7 +14,7 @@ hideMeta: true
 
 ## LMU Munich
 
-- **Applied Data Analytics for the Public Sector (ADA Bayern)**, Graduate and Professional (Fall 2023–Fall 2026)
+- **[Applied Data Analytics for the Public Sector (ADA Bayern)](https://ada-oeffentliche-verwaltung.de)**, Graduate and Professional (Fall 2023–Fall 2026)
 - **Data and Privacy: Theoretical and Empirical Challenges**, Graduate (Spring 2022)
 - **Statistics II for Sociologists**, Undergraduate (Spring 2021)
 
