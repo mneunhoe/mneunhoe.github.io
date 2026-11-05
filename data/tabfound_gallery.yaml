@@ -2,6 +2,10 @@
 # (content/software/tabfound-gallery). The figures and their manifest come
 # from tabfound via scripts/sync-tabfound-gallery.sh; this file holds the
 # names the controls show. Keys match the manifest's model keys.
+#
+# `huggingface` is the model's repository on Hugging Face, as tabfound's
+# list_models() gives it for the checkpoint the gallery draws (the
+# classifier where a model has one per task).
 
 default:
   model: tabicl
@@ -13,33 +17,43 @@ models:
   tabpfn:
     name: TabPFN v2.5
     family: TabPFN
+    huggingface: Prior-Labs/tabpfn_2_5
   tabpfn26:
     name: TabPFN v2.6
     family: TabPFN
+    huggingface: Prior-Labs/tabpfn_2_6
   tabpfn3:
     name: TabPFN v3
     family: TabPFN
+    huggingface: Prior-Labs/tabpfn_3
   tabpfn35:
     name: TabPFN v3.5
     family: TabPFN
+    huggingface: Prior-Labs/tabpfn_3_5
   tabicl:
     name: TabICL v2
     family: TabICL
+    huggingface: jingang/TabICL
   tabfm:
     name: TabFM
     family: TabFM
+    huggingface: google/tabfm-1.0.0-pytorch
   mitra:
     name: Mitra
     family: Mitra
+    huggingface: autogluon/mitra-classifier
   kumo:
     name: Kumo Tabular small
     family: Kumo Tabular
+    huggingface: nvidia/Kumo-Tabular
   kumo-medium:
     name: Kumo Tabular medium
     family: Kumo Tabular
+    huggingface: nvidia/Kumo-Tabular
   kumo-large:
     name: Kumo Tabular large
     family: Kumo Tabular
+    huggingface: nvidia/Kumo-Tabular
 
 styles:
   cards:

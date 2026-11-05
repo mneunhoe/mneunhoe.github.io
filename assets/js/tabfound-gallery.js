@@ -215,6 +215,24 @@
     download.setAttribute("download", file);
   }
 
+  // Under the figure: where each model shown is published.
+  function huggingface(keys) {
+    var list = $(".tf-hf");
+    list.innerHTML = "";
+    keys.forEach(function (key) {
+      var repo = text.models[key].huggingface;
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(name(key) + " on Hugging Face: "));
+      var a = document.createElement("a");
+      a.href = "https://huggingface.co/" + repo;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = repo;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+  }
+
   function render() {
     var theme = effectiveTheme();
     var title = $(".tf-title");
@@ -226,6 +244,7 @@
         name(p.a) + " and " + name(p.b) + " side by side, stage against stage.",
         file);
       title.textContent = name(p.a) + " and " + name(p.b);
+      huggingface([p.a, p.b]);
       return;
     }
 
@@ -243,6 +262,7 @@
     span.className = "tf-title-style";
     span.textContent = "· " + style.label + (detail === "full" ? ", full" : "");
     title.appendChild(span);
+    huggingface([m.key]);
   }
 
   function update() {

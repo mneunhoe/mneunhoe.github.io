@@ -22,6 +22,9 @@
   {{- if not (index $text.models $key) -}}
     {{- errorf "tabfound-gallery: model %q has no entry in data/tabfound_gallery.yaml" $key -}}
   {{- end -}}
+  {{- if not (index $text.models $key).huggingface -}}
+    {{- errorf "tabfound-gallery: model %q has no huggingface repo in data/tabfound_gallery.yaml" $key -}}
+  {{- end -}}
   {{- range $style, $views := .views -}}
     {{- range $views -}}
       {{- $detail := .detail -}}
@@ -106,6 +109,10 @@
       <button type="button" class="tf-copy" hidden>Copy link to this view</button>
     </figcaption>
   </figure>
+
+  <ul class="tf-hf">
+    <li>{{ $dm.name }} on Hugging Face: <a href="https://huggingface.co/{{ $dm.huggingface }}" target="_blank" rel="noopener">{{ $dm.huggingface }}</a></li>
+  </ul>
 
   <noscript>
     <ul>
