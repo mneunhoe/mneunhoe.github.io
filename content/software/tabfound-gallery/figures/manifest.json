@@ -1,6 +1,6 @@
 {
   "tabfound": "0.0.0.9000",
-  "styles": ["cards", "tufte", "glyphs", "icicle", "schematic"],
+  "styles": ["cards", "tufte", "glyphs", "schematic"],
   "themes": ["light", "dark"],
   "backgrounds": {
     "light": "#f5f5f5",
@@ -51,13 +51,6 @@
             "detail": "full",
             "width": 860,
             "height": 1395
-          }
-        ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 845
           }
         ],
         "schematic": [
@@ -119,13 +112,6 @@
             "height": 1395
           }
         ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 883
-          }
-        ],
         "schematic": [
           {
             "detail": "overview",
@@ -183,13 +169,6 @@
             "detail": "full",
             "width": 860,
             "height": 1873
-          }
-        ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1085
           }
         ],
         "schematic": [
@@ -251,13 +230,6 @@
             "height": 2202
           }
         ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1176
-          }
-        ],
         "schematic": [
           {
             "detail": "overview",
@@ -315,13 +287,6 @@
             "detail": "full",
             "width": 860,
             "height": 1872
-          }
-        ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1056
           }
         ],
         "schematic": [
@@ -383,13 +348,6 @@
             "height": 2418
           }
         ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1228
-          }
-        ],
         "schematic": [
           {
             "detail": "overview",
@@ -447,13 +405,6 @@
             "detail": "full",
             "width": 860,
             "height": 1427
-          }
-        ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 883
           }
         ],
         "schematic": [
@@ -515,13 +466,6 @@
             "height": 1948
           }
         ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1052
-          }
-        ],
         "schematic": [
           {
             "detail": "overview",
@@ -581,13 +525,6 @@
             "height": 2042
           }
         ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1052
-          }
-        ],
         "schematic": [
           {
             "detail": "overview",
@@ -645,13 +582,6 @@
             "detail": "full",
             "width": 860,
             "height": 1964
-          }
-        ],
-        "icicle": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1052
           }
         ],
         "schematic": [

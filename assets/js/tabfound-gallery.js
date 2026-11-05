@@ -406,13 +406,20 @@
     location.hash = a.getAttribute("href");
   }, true);
 
-  window.addEventListener("hashchange", function () {
+  // A link to a view the gallery no longer has (a dropped style, say)
+  // falls back to the default; the hash is rewritten to the view shown.
+  function followHash() {
     readHash();
+    if (location.hash) writeHash();
+  }
+
+  window.addEventListener("hashchange", function () {
+    followHash();
     update();
     root.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  readHash();
+  followHash();
   $(".tf-controls").hidden = false;
   update();
 })();

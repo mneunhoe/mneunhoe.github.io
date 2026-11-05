@@ -31,6 +31,10 @@ BG_DARK="#1d1e20"
 # The side-by-side figures take the first three.
 HIGHLIGHT="#4B0055,#007094,#00BE7D,#FDE333"
 
+# The styles the gallery offers, in the order of its buttons. tabfound's
+# icicle is left out.
+STYLES="cards,tufte,glyphs,schematic"
+
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
@@ -38,7 +42,7 @@ trap 'rm -rf "$TMP"' EXIT
 (cd "$TABFOUND" && LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript \
   -e 'suppressMessages(devtools::load_all(quiet = TRUE)); source("inst/gallery/make-gallery.R")' \
   --matrix --background-light="$BG_LIGHT" --background-dark="$BG_DARK" \
-  --highlight="$HIGHLIGHT" "$TMP")
+  --highlight="$HIGHLIGHT" --styles="$STYLES" "$TMP")
 
 mkdir -p "$DEST"
 rsync -a --delete "$TMP/" "$DEST/"

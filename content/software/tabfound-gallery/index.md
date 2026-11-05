@@ -2,7 +2,7 @@
 title: "Tabular Foundation Model Architecture Gallery"
 url: "/software/tabfound/gallery/"
 date: 2026-11-05
-summary: "Every architecture tabfound runs, drawn from the models themselves, in five styles, two levels of detail and both themes."
+summary: "Every architecture tabfound runs, drawn from the models themselves, in four styles, two levels of detail and both themes."
 tags:
   - Tabular Foundation Models
   - R Package

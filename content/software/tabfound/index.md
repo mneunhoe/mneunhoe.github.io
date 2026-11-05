@@ -87,7 +87,8 @@ estimate, `tabfound` can use it as the model inside other methods:
 `tabfound` can draw the network of every model it runs, from the network
 itself: `plot_architecture()` in five styles, and `plot_architecture_diff()`
 for two models side by side. The [architecture gallery](/software/tabfound/gallery/)
-shows all of them, in every style, both levels of detail and both themes.
+shows all of them in four of those styles, at both levels of detail and in
+both themes.
 
 {{< tabfound-figure model="tabpfn" style="cards" detail="overview" caption="TabPFN v2.5, drawn by `plot_architecture()`. [Open the gallery →](/software/tabfound/gallery/)" >}}
 

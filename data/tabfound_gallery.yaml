@@ -48,8 +48,6 @@ styles:
     label: Tufte
   glyphs:
     label: Glyphs
-  icicle:
-    label: Icicle
   schematic:
     label: Schematic
 
