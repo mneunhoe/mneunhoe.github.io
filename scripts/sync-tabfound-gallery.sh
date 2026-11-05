@@ -20,13 +20,20 @@ if [ ! -f "$TABFOUND/inst/gallery/make-gallery.R" ]; then
   exit 1
 fi
 
+# The page background in each theme, so the figures sit on the page
+# rather than in a box: --code-bg in light (assets/css/extended/custom.css
+# puts every page on it) and --theme in dark, from PaperMod's
+# assets/css/core/theme-vars.css. Change these if those change.
+BG_LIGHT="#f5f5f5"
+BG_DARK="#1d1e20"
+
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 # The diagrams carry non-ASCII text (×, ·, →), so R needs a UTF-8 locale.
 (cd "$TABFOUND" && LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript \
   -e 'suppressMessages(devtools::load_all(quiet = TRUE)); source("inst/gallery/make-gallery.R")' \
-  --matrix "$TMP")
+  --matrix --background-light="$BG_LIGHT" --background-dark="$BG_DARK" "$TMP")
 
 mkdir -p "$DEST"
 rsync -a --delete "$TMP/" "$DEST/"

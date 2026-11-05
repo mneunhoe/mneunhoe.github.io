@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="2875" viewBox="0 0 940 2875">
+  <title>TabPFN v3.5 - classifier</title>
+  <desc>Prior-Labs  -  one multitask checkpoint; three stages: per column, per row, in context  ·  219.0 M parameters. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; F: feature groups; n_test: test rows (the rows being predicted). Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; CLS: learned summary token that reads out a row or column; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); LayerNorm: layer normalisation; RMSNorm: root-mean-square normalisation; QK: query and key (as in QK-norm); KV: keys and values (as in KV cache, KV heads); NaN: not-a-number: undefined values in the input; ECDF: empirical cumulative distribution function; MQA: multi-query attention: every query head shares one set of keys and values. How to read: the data flows upwards, from the input table to the prediction; a line up the right-hand side ending in a circled plus: a residual connection, adding the input of the steps it passes back to their output; a box at the left meeting the flow at a circled plus: that stage's output is added to the flow; N ×: the steps in the tinted container are stacked N times; small boxes at the left feed the step their arrow points to; dark boxes are attention; the line under the name says where its keys come from, which tokens query in the last block, how it is scaled, and how many key/value heads the test rows read; beside the arrows: the tensor shape each stage emits, in the symbols above; dotted lines: facts about the part they point to, with the numbers in the model's colour; a dotted box: what a feed-forward step computes inside, read upwards; its caption is the widths, in to hidden and back out; another feed-forward of the same widths computes the same.</desc>
+  <rect width="940" height="2875" fill="#1d1e20"/>
+  <text x="36" y="40" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="20px" font-weight="600" fill="#82B184">TabPFN v3.5 - classifier</text>
+  <text x="36" y="64" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#C9C9C9">Prior-Labs  -  one multitask checkpoint; three stages: per column, per row, in context  ·  219.0 M parameters</text>
+  <rect x="236" y="98" width="386" height="2047" rx="14" fill="#27282A" stroke="#4C4D4F" stroke-width="1"/>
+  <rect x="256" y="1831" width="346" height="194" rx="10" fill="#3B463E"/>
+  <rect x="256" y="1117" width="346" height="664" rx="10" fill="#3B463E"/>
+  <rect x="256" y="788" width="346" height="307" rx="10" fill="#3B463E"/>
+  <rect x="256" y="374" width="346" height="320" rx="10" fill="#3B463E"/>
+  <rect x="280" y="2099" width="280" height="30" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="2114" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">Input table</text>
+  <line x1="420" y1="2099" x2="420" y2="2082" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,2083 424,2083 420,2077" fill="#D7D8D8"/>
+  <rect x="280" y="2047" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="2062" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">In-context ECDF</text>
+  <line x1="420" y1="2047" x2="420" y2="2025" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="2025" x2="420" y2="2008" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,2009 424,2009 420,2003" fill="#D7D8D8"/>
+  <rect x="280" y="1973" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1988" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">Learned Fourier frequencies</text>
+  <line x1="420" y1="1973" x2="420" y2="1956" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1957 424,1957 420,1951" fill="#D7D8D8"/>
+  <rect x="280" y="1921" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1936" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">Metadata projection</text>
+  <line x1="420" y1="1921" x2="420" y2="1904" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1905 424,1905 420,1899" fill="#D7D8D8"/>
+  <rect x="280" y="1869" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1884" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">LayerNorm</text>
+  <text x="266" y="1845" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#FAFAFB">Cell embedder</text>
+  <text x="592" y="1845" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="end" fill="#9F9FA0">12.4 k</text>
+  <line x1="420" y1="1831" x2="420" y2="1827" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <rect x="412" y="1807" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="1815" x2="425" y2="1815" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1820" x2="420" y2="1810" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1803" x2="420" y2="1781" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1781" x2="420" y2="1764" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1765 424,1765 420,1759" fill="#D7D8D8"/>
+  <rect x="280" y="1729" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1744" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm, queries</text>
+  <line x1="420" y1="1729" x2="420" y2="1720" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1721 424,1721 420,1715" fill="#D7D8D8"/>
+  <rect x="280" y="1685" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1700" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm, keys and values</text>
+  <line x1="420" y1="1685" x2="420" y2="1676" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1677 424,1677 420,1671" fill="#D7D8D8"/>
+  <rect x="280" y="1624" width="280" height="47" rx="6" fill="#ECECEC"/>
+  <text x="420" y="1639" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#111111">Inducing vectors attend to the training rows</text>
+  <text x="420" y="1656" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#537154">keys: training rows · softmax-scaling MLP</text>
+  <line x1="420" y1="1624" x2="420" y2="1615" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1616 424,1616 420,1610" fill="#D7D8D8"/>
+  <rect x="412" y="1594" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="1602" x2="425" y2="1602" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1607" x2="420" y2="1597" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1770" x2="586" y2="1770" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1770" x2="586" y2="1602" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1602" x2="433" y2="1602" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,1606 434,1598 428,1602" fill="#D7D8D8"/>
+  <line x1="420" y1="1594" x2="420" y2="1577" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1578 424,1578 420,1572" fill="#D7D8D8"/>
+  <rect x="280" y="1542" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1557" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm</text>
+  <line x1="420" y1="1542" x2="420" y2="1533" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1534 424,1534 420,1528" fill="#D7D8D8"/>
+  <rect x="280" y="1498" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1513" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">MLP, GELU</text>
+  <line x1="420" y1="1498" x2="420" y2="1489" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1490 424,1490 420,1484" fill="#D7D8D8"/>
+  <rect x="412" y="1468" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="1476" x2="425" y2="1476" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1481" x2="420" y2="1471" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1583" x2="586" y2="1583" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1583" x2="586" y2="1476" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1476" x2="433" y2="1476" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,1480 434,1472 428,1476" fill="#D7D8D8"/>
+  <line x1="420" y1="1468" x2="420" y2="1451" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1452 424,1452 420,1446" fill="#D7D8D8"/>
+  <rect x="280" y="1416" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1431" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm, queries</text>
+  <line x1="420" y1="1416" x2="420" y2="1407" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1408 424,1408 420,1402" fill="#D7D8D8"/>
+  <rect x="280" y="1372" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1387" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm, keys and values</text>
+  <line x1="420" y1="1372" x2="420" y2="1363" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1364 424,1364 420,1358" fill="#D7D8D8"/>
+  <rect x="280" y="1311" width="280" height="47" rx="6" fill="#ECECEC"/>
+  <text x="420" y="1326" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#111111">Rows attend back to the inducing vectors</text>
+  <text x="420" y="1343" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#537154">keys: inducing points</text>
+  <line x1="420" y1="1311" x2="420" y2="1302" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1303 424,1303 420,1297" fill="#D7D8D8"/>
+  <rect x="412" y="1281" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="1289" x2="425" y2="1289" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1294" x2="420" y2="1284" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1457" x2="586" y2="1457" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1457" x2="586" y2="1289" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1289" x2="433" y2="1289" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,1293 434,1285 428,1289" fill="#D7D8D8"/>
+  <line x1="420" y1="1281" x2="420" y2="1264" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1265 424,1265 420,1259" fill="#D7D8D8"/>
+  <rect x="280" y="1229" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1244" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm</text>
+  <line x1="420" y1="1229" x2="420" y2="1220" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1221 424,1221 420,1215" fill="#D7D8D8"/>
+  <rect x="280" y="1185" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1200" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">MLP, GELU</text>
+  <line x1="420" y1="1185" x2="420" y2="1176" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1177 424,1177 420,1171" fill="#D7D8D8"/>
+  <rect x="412" y="1155" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="1163" x2="425" y2="1163" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1168" x2="420" y2="1158" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1270" x2="586" y2="1270" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1270" x2="586" y2="1163" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1163" x2="433" y2="1163" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,1167 434,1159 428,1163" fill="#D7D8D8"/>
+  <text x="266" y="1131" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#FAFAFB">Feature-distribution embedder</text>
+  <text x="592" y="1131" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="end" fill="#9F9FA0">869.8 k</text>
+  <text x="246" y="1765" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15px" font-weight="600" text-anchor="end" fill="#82B184">3 ×</text>
+  <line x1="420" y1="1117" x2="420" y2="1095" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1095" x2="420" y2="1078" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1079 424,1079 420,1073" fill="#D7D8D8"/>
+  <rect x="280" y="1043" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="1058" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm</text>
+  <line x1="420" y1="1043" x2="420" y2="1034" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,1035 424,1035 420,1029" fill="#D7D8D8"/>
+  <rect x="280" y="982" width="280" height="47" rx="6" fill="#ECECEC"/>
+  <text x="420" y="997" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#111111">Attention over a row's columns</text>
+  <text x="420" y="1014" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#537154">last block queries: CLS tokens</text>
+  <line x1="420" y1="982" x2="420" y2="973" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,974 424,974 420,968" fill="#D7D8D8"/>
+  <rect x="412" y="952" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="960" x2="425" y2="960" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="965" x2="420" y2="955" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="1084" x2="586" y2="1084" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="1084" x2="586" y2="960" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="960" x2="433" y2="960" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,964 434,956 428,960" fill="#D7D8D8"/>
+  <line x1="420" y1="952" x2="420" y2="935" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,936 424,936 420,930" fill="#D7D8D8"/>
+  <rect x="280" y="900" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="915" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm</text>
+  <line x1="420" y1="900" x2="420" y2="891" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,892 424,892 420,886" fill="#D7D8D8"/>
+  <rect x="280" y="856" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="871" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">MLP, GELU</text>
+  <line x1="420" y1="856" x2="420" y2="847" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,848 424,848 420,842" fill="#D7D8D8"/>
+  <rect x="412" y="826" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="834" x2="425" y2="834" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="839" x2="420" y2="829" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="941" x2="586" y2="941" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="941" x2="586" y2="834" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="834" x2="433" y2="834" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,838 434,830 428,834" fill="#D7D8D8"/>
+  <text x="266" y="802" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#FAFAFB">Column aggregator</text>
+  <text x="592" y="802" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="end" fill="#9F9FA0">395.2 k</text>
+  <text x="246" y="1079" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15px" font-weight="600" text-anchor="end" fill="#82B184">3 ×</text>
+  <line x1="420" y1="788" x2="420" y2="779" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,780 424,780 420,774" fill="#D7D8D8"/>
+  <rect x="280" y="744" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="759" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm, after the stack</text>
+  <line x1="420" y1="744" x2="420" y2="740" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <rect x="412" y="720" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="728" x2="425" y2="728" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="733" x2="420" y2="723" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="716" x2="420" y2="694" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="694" x2="420" y2="677" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,678 424,678 420,672" fill="#D7D8D8"/>
+  <rect x="280" y="642" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="657" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm</text>
+  <line x1="420" y1="642" x2="420" y2="633" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,634 424,634 420,628" fill="#D7D8D8"/>
+  <rect x="280" y="568" width="280" height="60" rx="6" fill="#ECECEC"/>
+  <text x="420" y="583" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#111111">Attention over rows, training-only keys</text>
+  <text x="420" y="600" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#537154">keys: training rows · softmax-scaling MLP · test</text>
+  <text x="420" y="613" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#537154">rows: 1 KV head (MQA)</text>
+  <line x1="420" y1="568" x2="420" y2="559" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,560 424,560 420,554" fill="#D7D8D8"/>
+  <rect x="412" y="538" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="546" x2="425" y2="546" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="551" x2="420" y2="541" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="683" x2="586" y2="683" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="683" x2="586" y2="546" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="546" x2="433" y2="546" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,550 434,542 428,546" fill="#D7D8D8"/>
+  <line x1="420" y1="538" x2="420" y2="521" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,522 424,522 420,516" fill="#D7D8D8"/>
+  <rect x="280" y="486" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="501" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">RMSNorm</text>
+  <line x1="420" y1="486" x2="420" y2="477" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,478 424,478 420,472" fill="#D7D8D8"/>
+  <rect x="280" y="442" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="457" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="middle" fill="#FAFAFB">MLP, GELU</text>
+  <line x1="420" y1="442" x2="420" y2="433" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,434 424,434 420,428" fill="#D7D8D8"/>
+  <rect x="412" y="412" width="16" height="16" rx="8" fill="#303133" stroke="#D7D8D8" stroke-width="1.2"/>
+  <line x1="415" y1="420" x2="425" y2="420" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="425" x2="420" y2="415" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="420" y1="527" x2="586" y2="527" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="527" x2="586" y2="420" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="586" y1="420" x2="433" y2="420" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="434,424 434,416 428,420" fill="#D7D8D8"/>
+  <text x="266" y="388" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#FAFAFB">In-context learning block</text>
+  <text x="592" y="388" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="end" fill="#9F9FA0">203.2 M</text>
+  <text x="246" y="678" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15px" font-weight="600" text-anchor="end" fill="#82B184">24 ×</text>
+  <line x1="420" y1="374" x2="420" y2="357" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,358 424,358 420,352" fill="#D7D8D8"/>
+  <rect x="280" y="322" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="337" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">Output RMSNorm</text>
+  <text x="568" y="337" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" fill="#9F9FA0">1.0 k</text>
+  <line x1="420" y1="322" x2="420" y2="305" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,306 424,306 420,300" fill="#D7D8D8"/>
+  <rect x="280" y="270" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="285" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">Pre-head MLP (classification)</text>
+  <text x="568" y="285" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" fill="#9F9FA0">4.2 M</text>
+  <line x1="420" y1="270" x2="420" y2="253" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,254 424,254 420,248" fill="#D7D8D8"/>
+  <rect x="280" y="218" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="233" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">Many-class decoder</text>
+  <text x="568" y="233" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" fill="#9F9FA0">820.6 k</text>
+  <line x1="420" y1="218" x2="420" y2="201" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,202 424,202 420,196" fill="#D7D8D8"/>
+  <rect x="280" y="166" width="280" height="30" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="181" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">Regression head (not on this path)</text>
+  <text x="568" y="181" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" fill="#9F9FA0">9.3 M</text>
+  <line x1="420" y1="166" x2="420" y2="149" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="416,150 424,150 420,144" fill="#D7D8D8"/>
+  <rect x="280" y="114" width="280" height="30" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="420" y="129" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" text-anchor="middle" fill="#FAFAFB">Class logits</text>
+  <rect x="36" y="1802" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="1815" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">Target encoder (per column)</text>
+  <line x1="212" y1="1815" x2="224" y2="1815" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1815" x2="224" y2="1815" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1815" x2="407" y2="1815" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="406,1819 406,1811 412,1815" fill="#D7D8D8"/>
+  <text x="230" y="1825" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9.5px" font-style="italic" fill="#C9C9C9">training rows</text>
+  <rect x="36" y="1634.5" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="1647.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">QK-norm</text>
+  <line x1="212" y1="1647.5" x2="224" y2="1647.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1647.5" x2="224" y2="1647.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1647.5" x2="275" y2="1647.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="274,1651.5 274,1643.5 280,1647.5" fill="#D7D8D8"/>
+  <rect x="36" y="1600.5" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="1613.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">Learned inducing vectors</text>
+  <line x1="212" y1="1613.5" x2="224" y2="1613.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1613.5" x2="224" y2="1647.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1647.5" x2="251" y2="1647.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="250,1651.5 250,1643.5 256,1647.5" fill="#D7D8D8"/>
+  <rect x="36" y="1321.5" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="1334.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">QK-norm</text>
+  <line x1="212" y1="1334.5" x2="224" y2="1334.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1334.5" x2="224" y2="1334.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1334.5" x2="275" y2="1334.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="274,1338.5 274,1330.5 280,1334.5" fill="#D7D8D8"/>
+  <rect x="36" y="992.5" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="1005.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">QK-norm</text>
+  <line x1="212" y1="1005.5" x2="224" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1005.5" x2="224" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1005.5" x2="275" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="274,1009.5 274,1001.5 280,1005.5" fill="#D7D8D8"/>
+  <rect x="36" y="958.5" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="971.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">RoPE frequencies (learned)</text>
+  <line x1="212" y1="971.5" x2="224" y2="971.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="971.5" x2="224" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1005.5" x2="251" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="250,1009.5 250,1001.5 256,1005.5" fill="#D7D8D8"/>
+  <rect x="36" y="924.5" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="937.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">CLS tokens</text>
+  <line x1="212" y1="937.5" x2="224" y2="937.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="937.5" x2="224" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="1005.5" x2="251" y2="1005.5" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="250,1009.5 250,1001.5 256,1005.5" fill="#D7D8D8"/>
+  <rect x="36" y="715" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="728" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">Target encoder (per row)</text>
+  <line x1="212" y1="728" x2="224" y2="728" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="728" x2="224" y2="728" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="728" x2="407" y2="728" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="406,732 406,724 412,728" fill="#D7D8D8"/>
+  <text x="230" y="738" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="9.5px" font-style="italic" fill="#C9C9C9">training rows</text>
+  <rect x="36" y="585" width="176" height="26" rx="6" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="124" y="598" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="middle" fill="#FAFAFB">QK-norm</text>
+  <line x1="212" y1="598" x2="224" y2="598" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="598" x2="224" y2="598" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <line x1="224" y1="598" x2="275" y2="598" stroke="#D7D8D8" stroke-width="1.1" stroke-linecap="round"/>
+  <polygon points="274,602 274,594 280,598" fill="#D7D8D8"/>
+  <text x="428" y="2088" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10px" fill="#C9C9C9">(n rows, p features)</text>
+  <text x="428" y="2036" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10px" fill="#C9C9C9">(B, n, F)</text>
+  <text x="428" y="1106" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10px" fill="#C9C9C9">(B, n, F, 128)</text>
+  <text x="428" y="363" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10px" fill="#C9C9C9">(B, n, 1024)</text>
+  <text x="428" y="207" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10px" fill="#C9C9C9">(n_test, 160)</text>
+  <line x1="606" y1="1845" x2="692" y2="1845" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="1830" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Embedding width</text>
+  <text x="794.98" y="1830" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">128</text>
+  <text x="700" y="1845" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Features per group</text>
+  <text x="811.97" y="1845" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">3</text>
+  <text x="700" y="1860" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Cell channels</text>
+  <text x="783.64" y="1860" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">value, NaN/Inf fla...</text>
+  <line x1="606" y1="1765" x2="692" y2="1765" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="1765" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Column-stage blocks</text>
+  <text x="817.64" y="1765" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">3</text>
+  <line x1="564" y1="1513" x2="692" y2="1513" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <rect x="700" y="1451" width="204" height="124" rx="8" fill="#27282A" stroke="#9F9FA0" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="710" y="1463" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-style="italic" fill="#C9C9C9">128 → 256 → 128, no bias</text>
+  <rect x="720" y="1541" width="164" height="22" rx="5" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="802" y="1552" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#FAFAFB">Linear</text>
+  <line x1="802" y1="1541" x2="802" y2="1534" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="798,1535 806,1535 802,1529" fill="#D7D8D8"/>
+  <rect x="720" y="1507" width="164" height="22" rx="5" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="802" y="1518" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#FAFAFB">GELU</text>
+  <line x1="802" y1="1507" x2="802" y2="1500" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="798,1501 806,1501 802,1495" fill="#D7D8D8"/>
+  <rect x="720" y="1473" width="164" height="22" rx="5" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="802" y="1484" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#FAFAFB">Linear</text>
+  <line x1="606" y1="1131" x2="692" y2="1131" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="1131" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Inducing points</text>
+  <text x="794.98" y="1131" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">128</text>
+  <line x1="606" y1="1079" x2="692" y2="1079" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="1079" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Row-stage blocks</text>
+  <text x="800.64" y="1079" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">3</text>
+  <line x1="606" y1="678" x2="692" y2="678" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="678" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">ICL layers</text>
+  <text x="766.65" y="678" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">24</text>
+  <line x1="564" y1="598" x2="692" y2="598" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="598" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">ICL heads</text>
+  <text x="760.98" y="598" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">16 x 64</text>
+  <line x1="564" y1="457" x2="692" y2="457" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <rect x="700" y="395" width="204" height="124" rx="8" fill="#27282A" stroke="#9F9FA0" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="710" y="407" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-style="italic" fill="#C9C9C9">1024 → 2048 → 1024, no bias</text>
+  <rect x="720" y="485" width="164" height="22" rx="5" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="802" y="496" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#FAFAFB">Linear</text>
+  <line x1="802" y1="485" x2="802" y2="478" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="798,479 806,479 802,473" fill="#D7D8D8"/>
+  <rect x="720" y="451" width="164" height="22" rx="5" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="802" y="462" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#FAFAFB">GELU</text>
+  <line x1="802" y1="451" x2="802" y2="444" stroke="#D7D8D8" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="798,445 806,445 802,439" fill="#D7D8D8"/>
+  <rect x="720" y="417" width="164" height="22" rx="5" fill="#303133" stroke="#D1D1D1" stroke-width="1"/>
+  <text x="802" y="428" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" text-anchor="middle" fill="#FAFAFB">Linear</text>
+  <line x1="606" y1="388" x2="692" y2="377.5" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="377.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">ICL width</text>
+  <text x="760.98" y="377.5" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">1024 (8 CLS x 128)</text>
+  <line x1="564" y1="129" x2="692" y2="129" stroke="#9F9FA0" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 3"/>
+  <text x="700" y="129" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">Output width</text>
+  <text x="777.98" y="129" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#82B184">160</text>
+  <line x1="236" y1="2179" x2="904" y2="2179" stroke="#C9C9C9" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="224" y="2193" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-style="italic" text-anchor="end" fill="#C9C9C9">Facts</text>
+  <text x="236" y="2193" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">Heads in checkpoint</text>
+  <text x="904" y="2193" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" text-anchor="end" fill="#FAFAFB">both (160 classes / 5000 bars)</text>
+  <text x="236" y="2212" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">Normalisation</text>
+  <text x="904" y="2212" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" text-anchor="end" fill="#FAFAFB">RMSNorm, pre; QK-norm per head</text>
+  <text x="236" y="2231" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">Attention scaling</text>
+  <text x="904" y="2231" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" text-anchor="end" fill="#FAFAFB">learned (softmax-scaling MLP)</text>
+  <text x="236" y="2250" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">KV cache</text>
+  <text x="904" y="2250" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" text-anchor="end" fill="#FAFAFB">exact</text>
+  <line x1="236" y1="2263" x2="904" y2="2263" stroke="#C9C9C9" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="36" y1="2293" x2="904" y2="2293" stroke="#9F9FA0" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="36" y="2313" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#FAFAFB">Key</text>
+  <text x="36" y="2335" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#9F9FA0">SYMBOLS IN SHAPES</text>
+  <text x="36" y="2353" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FAFAFB">B</text>
+  <text x="89.6" y="2353" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">ensemble members (batch)</text>
+  <text x="36" y="2373" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FAFAFB">n</text>
+  <text x="89.6" y="2373" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">rows in the context (train + test)</text>
+  <text x="36" y="2393" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FAFAFB">p</text>
+  <text x="89.6" y="2393" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">raw features</text>
+  <text x="482" y="2353" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FAFAFB">F</text>
+  <text x="535.6" y="2353" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">feature groups</text>
+  <text x="482" y="2373" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FAFAFB">n_test</text>
+  <text x="535.6" y="2373" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">test rows (the rows being predicted)</text>
+  <text x="36" y="2423" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#9F9FA0">ABBREVIATIONS</text>
+  <text x="36" y="2441" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">ICL</text>
+  <text x="100.98" y="2441" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">in-context learning: test rows attend to the labelled training</text>
+  <text x="100.98" y="2456" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">rows</text>
+  <text x="36" y="2476" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">CLS</text>
+  <text x="100.98" y="2476" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">learned summary token that reads out a row or column</text>
+  <text x="36" y="2496" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">RoPE</text>
+  <text x="100.98" y="2496" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">rotary position embedding</text>
+  <text x="36" y="2516" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">MLP</text>
+  <text x="100.98" y="2516" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">multilayer perceptron (the feed-forward sublayer)</text>
+  <text x="36" y="2536" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">GELU</text>
+  <text x="100.98" y="2536" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">Gaussian error linear unit (activation)</text>
+  <text x="36" y="2556" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">LayerNorm</text>
+  <text x="100.98" y="2556" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">layer normalisation</text>
+  <text x="482" y="2441" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">RMSNorm</text>
+  <text x="546.98" y="2441" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">root-mean-square normalisation</text>
+  <text x="482" y="2476" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">QK</text>
+  <text x="546.98" y="2476" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">query and key (as in QK-norm)</text>
+  <text x="482" y="2496" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">KV</text>
+  <text x="546.98" y="2496" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">keys and values (as in KV cache, KV heads)</text>
+  <text x="482" y="2516" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">NaN</text>
+  <text x="546.98" y="2516" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">not-a-number: undefined values in the input</text>
+  <text x="482" y="2536" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">ECDF</text>
+  <text x="546.98" y="2536" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">empirical cumulative distribution function</text>
+  <text x="482" y="2556" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#FAFAFB">MQA</text>
+  <text x="546.98" y="2556" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">multi-query attention: every query head shares one set of keys and</text>
+  <text x="546.98" y="2571" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">values</text>
+  <text x="36" y="2601" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#9F9FA0">HOW TO READ</text>
+  <text x="52" y="2619" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">the data flows upwards, from the input table to the prediction</text>
+  <text x="52" y="2639" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">a line up the right-hand side ending in a circled plus: a residual connection, adding the input of the steps it passes back to their output</text>
+  <text x="52" y="2659" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">a box at the left meeting the flow at a circled plus: that stage's output is added to the flow</text>
+  <rect x="36" y="2674" width="10" height="10" rx="2" fill="#82B184"/>
+  <text x="52" y="2679" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">N ×: the steps in the tinted container are stacked N times</text>
+  <text x="52" y="2699" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">small boxes at the left feed the step their arrow points to</text>
+  <rect x="36" y="2714" width="10" height="10" rx="2" fill="#ECECEC"/>
+  <text x="52" y="2719" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">dark boxes are attention; the line under the name says where its keys come from, which tokens query in the last block, how it is scaled, and how many key/value</text>
+  <text x="52" y="2734" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">heads the test rows read</text>
+  <text x="52" y="2754" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">beside the arrows: the tensor shape each stage emits, in the symbols above</text>
+  <text x="52" y="2774" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">dotted lines: facts about the part they point to, with the numbers in the model's colour</text>
+  <text x="52" y="2794" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">a dotted box: what a feed-forward step computes inside, read upwards; its caption is the widths, in to hidden and back out; another feed-forward of the same</text>
+  <text x="52" y="2809" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C9C9C9">widths computes the same</text>
+</svg>

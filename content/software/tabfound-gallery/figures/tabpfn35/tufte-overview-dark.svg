@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="964" height="1585" viewBox="0 0 964 1585">
+  <title>TabPFN v3.5 - classifier</title>
+  <desc>Prior-Labs  -  one multitask checkpoint; three stages: per column, per row, in context  ·  219.0 M parameters. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; F: feature groups; n_test: test rows (the rows being predicted). Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; CLS: learned summary token that reads out a row or column; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); LayerNorm: layer normalisation; RMSNorm: root-mean-square normalisation; QK: query and key (as in QK-norm); KV: keys and values (as in KV cache, KV heads); NaN: not-a-number: undefined values in the input; NA: missing values in the input; ECDF: empirical cumulative distribution function. How to read: × N: the block is stacked N times; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the stage's share of the total; margin colour: the phase, from first (dark) to last (light); output shape: the tensor each stage emits, in the symbols above.</desc>
+  <rect width="964" height="1585" fill="#1d1e20"/>
+  <text x="32" y="42" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="22px" fill="#FCFCFC">TabPFN v3.5 - classifier</text>
+  <text x="32" y="66" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="13px" font-style="italic" fill="#C5C6C6">Prior-Labs  -  one multitask checkpoint; three stages: per column, per row, in context  ·  219.0 M parameters</text>
+  <text x="516" y="106" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" fill="#8F9091">output shape</text>
+  <text x="662" y="106" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" fill="#8F9091">parameters, log scale</text>
+  <text x="168" y="136" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Input table</text>
+  <text x="168" y="152" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">numeric matrix, NA allowed</text>
+  <text x="516" y="136" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(n rows, p features)</text>
+  <text x="168" y="196" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">In-context ECDF</text>
+  <text x="168" y="212" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">per column, each cell's midrank against the training rows,</text>
+  <text x="168" y="228" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">via 8192 bucket edges</text>
+  <text x="516" y="196" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F)</text>
+  <text x="168" y="258" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Cell embedder</text>
+  <text x="168" y="274" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Fourier bank (32 frequencies) over 3 values + linear over</text>
+  <text x="168" y="290" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">30 metadata channels, LayerNorm</text>
+  <text x="516" y="258" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F, 128)</text>
+  <line x1="662" y1="258" x2="712.23" y2="258" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="708.73" y="254.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <text x="840" y="258" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">12.4 k</text>
+  <text x="168" y="320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Target encoder (per column)</text>
+  <text x="168" y="336" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">class embedding -&gt; 128, then LayerNorm</text>
+  <line x1="662" y1="320" x2="717.73" y2="320" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="714.23" y="316.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <text x="840" y="320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">21.0 k</text>
+  <text x="168" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Feature-distribution embedder</text>
+  <text x="498" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 3  over rows</text>
+  <text x="168" y="396" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">induced self-attention, 128 inducing vectors; keys are</text>
+  <text x="168" y="412" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">training rows only</text>
+  <text x="516" y="380" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F, 128)</text>
+  <line x1="662" y1="380" x2="756.55" y2="380" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="753.05" y="376.5" width="7" height="7" rx="3.5" fill="#20928B"/>
+  <text x="840" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">869.8 k</text>
+  <text x="168" y="456" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Column aggregator</text>
+  <text x="498" y="456" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 3  over columns</text>
+  <text x="168" y="472" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">pre-norm self-attention with RoPE and QK-norm; last block</text>
+  <text x="168" y="488" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">reads out 8 CLS tokens</text>
+  <text x="516" y="456" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, 1024)</text>
+  <line x1="662" y1="456" x2="748.32" y2="456" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="744.82" y="452.5" width="7" height="7" rx="3.5" fill="#3AB876"/>
+  <text x="840" y="456" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">395.2 k</text>
+  <text x="168" y="532" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Target encoder (per row)</text>
+  <text x="168" y="548" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">class embedding -&gt; 1024, then LayerNorm</text>
+  <line x1="662" y1="532" x2="739.4" y2="532" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="735.9" y="528.5" width="7" height="7" rx="3.5" fill="#92D643"/>
+  <text x="840" y="532" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">167.9 k</text>
+  <text x="168" y="578" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">In-context learning block</text>
+  <text x="498" y="578" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 24  over rows</text>
+  <text x="168" y="594" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">pre-norm, QK-norm; 16 heads of 64; test rows read 1 KV</text>
+  <text x="168" y="610" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">head; MLP 1024 -&gt; 2048</text>
+  <text x="516" y="578" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, 1024)</text>
+  <line x1="662" y1="578" x2="813.39" y2="578" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="809.89" y="574.5" width="7" height="7" rx="3.5" fill="#92D643"/>
+  <text x="840" y="578" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">203.2 M</text>
+  <text x="892" y="578" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">93%</text>
+  <text x="168" y="654" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Output RMSNorm</text>
+  <line x1="662" y1="654" x2="686.25" y2="654" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="682.75" y="650.5" width="7" height="7" rx="3.5" fill="#FDE625"/>
+  <text x="840" y="654" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">1.0 k</text>
+  <text x="168" y="684" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Pre-head MLP (classification)</text>
+  <text x="168" y="700" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">residual pre-norm, 1024 -&gt; 2048 -&gt; 1024</text>
+  <line x1="662" y1="684" x2="772.95" y2="684" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="769.45" y="680.5" width="7" height="7" rx="3.5" fill="#FDE625"/>
+  <text x="840" y="684" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">4.2 M</text>
+  <text x="892" y="684" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">2%</text>
+  <text x="168" y="730" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Many-class decoder</text>
+  <text x="168" y="746" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">retrieval over the training labels, 6 heads of 64; up to</text>
+  <text x="168" y="762" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">160 classes</text>
+  <text x="516" y="730" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(n_test, 160)</text>
+  <line x1="662" y1="730" x2="755.94" y2="730" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="752.44" y="726.5" width="7" height="7" rx="3.5" fill="#FDE625"/>
+  <text x="840" y="730" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">820.6 k</text>
+  <text x="168" y="792" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Regression head (not on this path)</text>
+  <text x="168" y="808" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">present in the checkpoint and loaded, but the task selects</text>
+  <text x="168" y="824" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">the other branch</text>
+  <line x1="662" y1="792" x2="781.27" y2="792" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
+  <rect x="777.77" y="788.5" width="7" height="7" rx="3.5" fill="#FDE625"/>
+  <text x="840" y="792" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">9.3 M</text>
+  <text x="892" y="792" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">4%</text>
+  <text x="168" y="868" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Class logits</text>
+  <text x="168" y="884" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">up to 160 classes</text>
+  <line x1="158" y1="189" x2="158" y2="343" stroke="#336F8F" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="150" y="196" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Embed</text>
+  <line x1="158" y1="373" x2="158" y2="419" stroke="#20928B" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="150" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Stage 1 - per</text>
+  <text x="150" y="395" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">column</text>
+  <line x1="158" y1="449" x2="158" y2="495" stroke="#3AB876" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="150" y="456" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Stage 2 - per row</text>
+  <line x1="158" y1="525" x2="158" y2="617" stroke="#92D643" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="150" y="532" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Stage 3 -</text>
+  <text x="150" y="547" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">in-context</text>
+  <line x1="158" y1="647" x2="158" y2="831" stroke="#FDE625" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="150" y="654" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Decode</text>
+  <line x1="686.25" y1="912" x2="813.39" y2="912" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="710" y1="912" x2="710" y2="916" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="710" y="926" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10px" text-anchor="middle" fill="#8F9091">10k</text>
+  <line x1="734" y1="912" x2="734" y2="916" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="758" y1="912" x2="758" y2="916" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="758" y="926" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10px" text-anchor="middle" fill="#8F9091">1M</text>
+  <line x1="782" y1="912" x2="782" y2="916" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="806" y1="912" x2="806" y2="916" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="806" y="926" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10px" text-anchor="middle" fill="#8F9091">100M</text>
+  <text x="840" y="912" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#C5C6C6">219.0 M total</text>
+  <line x1="168" y1="954" x2="932" y2="954" stroke="#C5C6C6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="150" y="968" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Facts</text>
+  <text x="168" y="968" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">ICL layers</text>
+  <text x="541" y="968" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">24</text>
+  <text x="168" y="987" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Column-stage blocks</text>
+  <text x="541" y="987" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">3</text>
+  <text x="168" y="1006" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Row-stage blocks</text>
+  <text x="541" y="1006" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">3</text>
+  <text x="168" y="1025" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Embedding width</text>
+  <text x="541" y="1025" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">128</text>
+  <text x="168" y="1044" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">ICL width</text>
+  <text x="541" y="1044" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">1024 (8 CLS x 128)</text>
+  <text x="168" y="1063" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">ICL heads</text>
+  <text x="541" y="1063" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">16 x 64</text>
+  <text x="168" y="1082" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Inducing points</text>
+  <text x="541" y="1082" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">128</text>
+  <text x="559" y="968" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Features per group</text>
+  <text x="932" y="968" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">3</text>
+  <text x="559" y="987" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Cell channels</text>
+  <text x="932" y="987" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">value, NaN/Inf flag, ECDF rank</text>
+  <text x="559" y="1006" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Output width</text>
+  <text x="932" y="1006" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">160</text>
+  <text x="559" y="1025" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Heads in checkpoint</text>
+  <text x="932" y="1025" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">both (160 classes / 5000 bars)</text>
+  <text x="559" y="1044" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Normalisation</text>
+  <text x="932" y="1044" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">RMSNorm, pre; QK-norm per head</text>
+  <text x="559" y="1063" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Attention scaling</text>
+  <text x="932" y="1063" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">learned (softmax-scaling MLP)</text>
+  <text x="559" y="1082" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">KV cache</text>
+  <text x="932" y="1082" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" text-anchor="end" fill="#FCFCFC">exact</text>
+  <line x1="168" y1="1095" x2="932" y2="1095" stroke="#C5C6C6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="168" y="1137" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-weight="600" fill="#FCFCFC">Key</text>
+  <text x="168" y="1159" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-weight="600" fill="#8F9091">SYMBOLS IN SHAPES</text>
+  <text x="168" y="1177" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FCFCFC">B</text>
+  <text x="221.6" y="1177" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">ensemble members (batch)</text>
+  <text x="168" y="1197" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FCFCFC">n</text>
+  <text x="221.6" y="1197" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">rows in the context (train + test)</text>
+  <text x="168" y="1217" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FCFCFC">p</text>
+  <text x="221.6" y="1217" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">raw features</text>
+  <text x="562" y="1177" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FCFCFC">F</text>
+  <text x="615.6" y="1177" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">feature groups</text>
+  <text x="562" y="1197" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#FCFCFC">n_test</text>
+  <text x="615.6" y="1197" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">test rows (the rows being predicted)</text>
+  <text x="168" y="1247" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-weight="600" fill="#8F9091">ABBREVIATIONS</text>
+  <text x="168" y="1265" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">ICL</text>
+  <text x="236.94" y="1265" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">in-context learning: test rows attend to the labelled</text>
+  <text x="236.94" y="1280" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">training rows</text>
+  <text x="168" y="1300" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">CLS</text>
+  <text x="236.94" y="1300" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">learned summary token that reads out a row or column</text>
+  <text x="168" y="1320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">RoPE</text>
+  <text x="236.94" y="1320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">rotary position embedding</text>
+  <text x="168" y="1340" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">MLP</text>
+  <text x="236.94" y="1340" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">multilayer perceptron (the feed-forward sublayer)</text>
+  <text x="168" y="1360" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">GELU</text>
+  <text x="236.94" y="1360" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">Gaussian error linear unit (activation)</text>
+  <text x="168" y="1380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">LayerNorm</text>
+  <text x="236.94" y="1380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">layer normalisation</text>
+  <text x="562" y="1265" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">RMSNorm</text>
+  <text x="630.94" y="1265" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">root-mean-square normalisation</text>
+  <text x="562" y="1300" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">QK</text>
+  <text x="630.94" y="1300" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">query and key (as in QK-norm)</text>
+  <text x="562" y="1320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">KV</text>
+  <text x="630.94" y="1320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">keys and values (as in KV cache, KV heads)</text>
+  <text x="562" y="1340" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">NaN</text>
+  <text x="630.94" y="1340" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">not-a-number: undefined values in the input</text>
+  <text x="562" y="1360" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">NA</text>
+  <text x="630.94" y="1360" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">missing values in the input</text>
+  <text x="562" y="1380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" font-weight="600" fill="#FCFCFC">ECDF</text>
+  <text x="630.94" y="1380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">empirical cumulative distribution function</text>
+  <text x="168" y="1410" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-weight="600" fill="#8F9091">HOW TO READ</text>
+  <text x="168" y="1428" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">× N: the block is stacked N times</text>
+  <text x="168" y="1448" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">over rows / columns / features: the axis this block's attention runs across</text>
+  <text x="168" y="1468" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the</text>
+  <text x="168" y="1483" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">stage's share of the total</text>
+  <text x="168" y="1503" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">margin colour: the phase, from first (dark) to last (light)</text>
+  <text x="168" y="1523" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">output shape: the tensor each stage emits, in the symbols above</text>
+</svg>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="890" height="1634" viewBox="0 0 890 1634">
+  <title>TabICL v2 vs TabFM</title>
+  <desc>Model A: TabICL v2 - classifier. Model B: TabFM - classifier. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; F: feature groups; E: embedding width; n_test: test rows (the rows being predicted). Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; CLS: learned summary token that reads out a row or column; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); SwiGLU: gated linear unit with a Swish activation; LayerNorm: layer normalisation; RMSNorm: root-mean-square normalisation; KV: keys and values (as in KV cache, KV heads). How to read: model A, its stages and its fact values; model B, its stages and its fact values; stages are paired by kind and attention axis, in order, not by name: a pair is the same kind of block in the same place, not necessarily the same design; matched: same kind and axis, and the same number of stacked blocks; N vs M: same kind and axis, with N stacked blocks in A and M in B; only A / only B: a stage with no counterpart in the other model; facts: shared (the same value), different, or one side (reported by one model only, shown as --); on each card: × N stacked blocks and the axis its attention runs over, then its output shape; top right, its exact parameter count.</desc>
+  <rect width="890" height="1634" fill="#f5f5f5"/>
+  <text x="40" y="40" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="19px" font-weight="600" fill="#090909">TabICL v2 vs TabFM</text>
+  <text x="40" y="62" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">stages paired by kind and attention axis; facts paired by name</text>
+  <text x="40" y="94" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" fill="#00755A">MODEL A</text>
+  <text x="40" y="111" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13px" font-weight="600" fill="#090909">TabICL v2  ·  27.6 M</text>
+  <text x="520" y="94" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" fill="#955900">MODEL B</text>
+  <text x="520" y="111" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13px" font-weight="600" fill="#090909">TabFM  ·  1.64 B</text>
+  <rect x="40" y="134" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="134" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="147" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Input table</text>
+  <text x="360" y="163" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(n rows, p features)</text>
+  <rect x="520" y="134" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="134" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="147" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Input table</text>
+  <text x="840" y="163" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(n rows, p features)</text>
+  <rect x="419.98" y="145" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="154" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="40" y="182" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="182" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="195" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Cell projection</text>
+  <text x="360" y="195" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">512</text>
+  <text x="360" y="211" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, F, n, E)</text>
+  <rect x="422.55" y="193" width="44.9" height="18" rx="9" fill="#f5f5f5" stroke="#00755A" stroke-width="1"/>
+  <text x="445" y="202" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#00755A">only A</text>
+  <rect x="40" y="230" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="230" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="243" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Target encoder (per column)</text>
+  <text x="360" y="243" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">1.4 k</text>
+  <rect x="520" y="230" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="230" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="243" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Fourier cell embedder</text>
+  <text x="840" y="243" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">35.8 k</text>
+  <text x="840" y="259" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, F, E)</text>
+  <rect x="419.98" y="241" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="250" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="40" y="278" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="278" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="291" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Column set transformer</text>
+  <text x="360" y="291" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">875.8 k</text>
+  <text x="52" y="307" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 3  ·  over rows</text>
+  <text x="360" y="307" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, F, E)</text>
+  <rect x="520" y="278" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="278" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="291" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Column set transformer</text>
+  <text x="840" y="291" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">6.6 M</text>
+  <text x="532" y="307" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 3  ·  over rows</text>
+  <text x="840" y="307" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, F, E)</text>
+  <rect x="419.98" y="289" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="298" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="40" y="326" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="326" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="339" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">CLS columns</text>
+  <text x="360" y="339" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">512</text>
+  <rect x="520" y="326" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="326" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="339" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">CLS columns</text>
+  <text x="840" y="339" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">2.0 k</text>
+  <rect x="419.98" y="337" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="346" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="520" y="374" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="374" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="387" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Row encoder</text>
+  <text x="840" y="387" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">3.2 M</text>
+  <text x="532" y="403" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 3  ·  over columns</text>
+  <text x="840" y="403" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, F, E)</text>
+  <rect x="422.55" y="385" width="44.9" height="18" rx="9" fill="#f5f5f5" stroke="#955900" stroke-width="1"/>
+  <text x="445" y="394" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#955900">only B</text>
+  <rect x="520" y="422" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="422" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="435" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Column set transformer</text>
+  <text x="840" y="435" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">6.6 M</text>
+  <text x="532" y="451" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 3  ·  over rows</text>
+  <text x="840" y="451" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, F, E)</text>
+  <rect x="422.55" y="433" width="44.9" height="18" rx="9" fill="#f5f5f5" stroke="#955900" stroke-width="1"/>
+  <text x="445" y="442" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#955900">only B</text>
+  <rect x="40" y="470" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="470" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="483" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Row encoder</text>
+  <text x="360" y="483" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">397.7 k</text>
+  <text x="52" y="499" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 3  ·  over columns</text>
+  <text x="360" y="499" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, 512)</text>
+  <rect x="520" y="470" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="470" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="483" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Row encoder, CLS readout</text>
+  <text x="840" y="483" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">3.2 M</text>
+  <text x="532" y="499" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 3  ·  over columns</text>
+  <text x="840" y="499" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, 2048)</text>
+  <rect x="419.98" y="481" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="490" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="40" y="518" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="518" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="531" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Target encoder (per row)</text>
+  <text x="360" y="531" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">5.6 k</text>
+  <rect x="520" y="518" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="518" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="531" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Target encoder (per row)</text>
+  <text x="840" y="531" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">22.5 k</text>
+  <rect x="419.98" y="529" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="538" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="40" y="566" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="566" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="579" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">In-context learning block</text>
+  <text x="360" y="579" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">25.7 M</text>
+  <text x="52" y="595" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 12  ·  over rows</text>
+  <text x="360" y="595" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, 512)</text>
+  <rect x="520" y="566" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="566" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="579" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">In-context learning block</text>
+  <text x="840" y="579" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">1.61 B</text>
+  <text x="532" y="595" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#535353">× 24  ·  over rows</text>
+  <text x="840" y="595" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(B, n, 2048)</text>
+  <rect x="417.4" y="577" width="55.2" height="18" rx="9" fill="#f5f5f5" stroke="#BC382A" stroke-width="1"/>
+  <text x="445" y="586" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#BC382A">12 vs 24</text>
+  <rect x="40" y="614" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="614" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="627" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Decoder MLP</text>
+  <text x="360" y="627" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">536.6 k</text>
+  <text x="360" y="643" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(n_test, 10)</text>
+  <rect x="520" y="614" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="614" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="627" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Decoder MLP</text>
+  <text x="840" y="627" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#090909">8.4 M</text>
+  <text x="840" y="643" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5px" text-anchor="end" fill="#535353">(n_test, 10)</text>
+  <rect x="419.98" y="625" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="634" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <rect x="40" y="662" width="330" height="40" rx="6" fill="#DCE9E6"/>
+  <rect x="40" y="662" width="3" height="40" rx="1.5" fill="#00755A"/>
+  <text x="52" y="675" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Class logits</text>
+  <rect x="520" y="662" width="330" height="40" rx="6" fill="#ECE6DC"/>
+  <rect x="520" y="662" width="3" height="40" rx="1.5" fill="#955900"/>
+  <text x="532" y="675" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Class logits</text>
+  <rect x="419.98" y="673" width="50.05" height="18" rx="9" fill="#f5f5f5" stroke="#676762" stroke-width="1"/>
+  <text x="445" y="682" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10px" font-weight="600" text-anchor="middle" fill="#676762">matched</text>
+  <text x="40" y="736" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14px" font-weight="600" fill="#090909">Facts</text>
+  <line x1="40" y1="748" x2="850" y2="748" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="758" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Column-stage blocks</text>
+  <text x="230" y="758" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">3</text>
+  <text x="520" y="758" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">3, twice</text>
+  <text x="850" y="758" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="770" x2="850" y2="770" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="780" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Row-stage blocks</text>
+  <text x="230" y="780" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">3</text>
+  <text x="520" y="780" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">3, twice</text>
+  <text x="850" y="780" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="792" x2="850" y2="792" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="802" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">ICL layers</text>
+  <text x="230" y="802" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">12</text>
+  <text x="520" y="802" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">24</text>
+  <text x="850" y="802" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="814" x2="850" y2="814" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="824" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Embedding width</text>
+  <text x="230" y="824" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">128</text>
+  <text x="520" y="824" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">256</text>
+  <text x="850" y="824" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="836" x2="850" y2="836" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="846" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">ICL width</text>
+  <text x="230" y="846" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">512 (4 CLS x 128)</text>
+  <text x="520" y="846" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">2048 (8 CLS x 256)</text>
+  <text x="850" y="846" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="858" x2="850" y2="858" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="868" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">ICL heads</text>
+  <text x="230" y="868" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">8 x 64</text>
+  <text x="520" y="868" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">8 x 256</text>
+  <text x="850" y="868" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="880" x2="850" y2="880" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="890" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Inducing points</text>
+  <text x="230" y="890" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">128</text>
+  <text x="520" y="890" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">256</text>
+  <text x="850" y="890" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="902" x2="850" y2="902" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="912" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Features per group</text>
+  <text x="230" y="912" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">3</text>
+  <text x="520" y="912" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">3</text>
+  <text x="850" y="912" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#676762">shared</text>
+  <line x1="40" y1="924" x2="850" y2="924" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="934" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Feed-forward</text>
+  <text x="230" y="934" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">2 x width (1024)</text>
+  <text x="520" y="934" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">SwiGLU, 4 x width (8192)</text>
+  <text x="850" y="934" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" text-anchor="end" fill="#BC382A">different</text>
+  <line x1="40" y1="946" x2="850" y2="946" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="956" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Output width</text>
+  <text x="230" y="956" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">10</text>
+  <text x="520" y="956" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">10</text>
+  <text x="850" y="956" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#676762">shared</text>
+  <line x1="40" y1="968" x2="850" y2="968" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="978" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">KV cache</text>
+  <text x="230" y="978" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">exact</text>
+  <text x="520" y="978" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">exact</text>
+  <text x="850" y="978" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#676762">shared</text>
+  <line x1="40" y1="990" x2="850" y2="990" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="1000" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Attention scaling</text>
+  <text x="230" y="1000" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">learned (scalable softmax)</text>
+  <text x="520" y="1000" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#666666">--</text>
+  <text x="850" y="1000" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#666666">one side</text>
+  <line x1="40" y1="1012" x2="850" y2="1012" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="1022" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Train/test split</text>
+  <text x="230" y="1022" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#00755A">by slicing, not masking</text>
+  <text x="520" y="1022" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#666666">--</text>
+  <text x="850" y="1022" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#666666">one side</text>
+  <line x1="40" y1="1034" x2="850" y2="1034" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="1044" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Fourier frequencies</text>
+  <text x="230" y="1044" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#666666">--</text>
+  <text x="520" y="1044" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">32</text>
+  <text x="850" y="1044" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#666666">one side</text>
+  <line x1="40" y1="1056" x2="850" y2="1056" stroke="#D6D6D6" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="1066" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#535353">Normalisation</text>
+  <text x="230" y="1066" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#666666">--</text>
+  <text x="520" y="1066" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" fill="#955900">RMSNorm, sandwich</text>
+  <text x="850" y="1066" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" text-anchor="end" fill="#666666">one side</text>
+  <line x1="40" y1="1118" x2="850" y2="1118" stroke="#666666" stroke-width="0.8" stroke-linecap="round"/>
+  <text x="40" y="1138" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" font-weight="600" fill="#090909">Key</text>
+  <text x="40" y="1160" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#666666">SYMBOLS IN SHAPES</text>
+  <text x="40" y="1178" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#090909">B</text>
+  <text x="93.6" y="1178" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">ensemble members (batch)</text>
+  <text x="40" y="1198" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#090909">n</text>
+  <text x="93.6" y="1198" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">rows in the context (train + test)</text>
+  <text x="40" y="1218" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#090909">p</text>
+  <text x="93.6" y="1218" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">raw features</text>
+  <text x="457" y="1178" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#090909">F</text>
+  <text x="510.6" y="1178" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">feature groups</text>
+  <text x="457" y="1198" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#090909">E</text>
+  <text x="510.6" y="1198" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">embedding width</text>
+  <text x="457" y="1218" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#090909">n_test</text>
+  <text x="510.6" y="1218" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">test rows (the rows being predicted)</text>
+  <text x="40" y="1248" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#666666">ABBREVIATIONS</text>
+  <text x="40" y="1266" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">ICL</text>
+  <text x="104.98" y="1266" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">in-context learning: test rows attend to the labelled</text>
+  <text x="104.98" y="1281" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">training rows</text>
+  <text x="40" y="1301" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">CLS</text>
+  <text x="104.98" y="1301" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">learned summary token that reads out a row or column</text>
+  <text x="40" y="1321" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">RoPE</text>
+  <text x="104.98" y="1321" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">rotary position embedding</text>
+  <text x="40" y="1341" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">MLP</text>
+  <text x="104.98" y="1341" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">multilayer perceptron (the feed-forward sublayer)</text>
+  <text x="40" y="1361" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">GELU</text>
+  <text x="104.98" y="1361" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">Gaussian error linear unit (activation)</text>
+  <text x="457" y="1266" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">SwiGLU</text>
+  <text x="521.98" y="1266" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">gated linear unit with a Swish activation</text>
+  <text x="457" y="1301" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">LayerNorm</text>
+  <text x="521.98" y="1301" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">layer normalisation</text>
+  <text x="457" y="1321" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">RMSNorm</text>
+  <text x="521.98" y="1321" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">root-mean-square normalisation</text>
+  <text x="457" y="1341" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">KV</text>
+  <text x="521.98" y="1341" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">keys and values (as in KV cache, KV heads)</text>
+  <text x="40" y="1391" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#666666">HOW TO READ</text>
+  <rect x="40" y="1404" width="10" height="10" rx="2" fill="#00755A"/>
+  <text x="56" y="1409" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">model A, its stages and its fact values</text>
+  <rect x="40" y="1424" width="10" height="10" rx="2" fill="#955900"/>
+  <text x="56" y="1429" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">model B, its stages and its fact values</text>
+  <text x="56" y="1449" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">stages are paired by kind and attention axis, in order, not by name: a pair is the same kind of block in the same place, not necessarily the same</text>
+  <text x="56" y="1464" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">design</text>
+  <rect x="40" y="1479" width="10" height="10" rx="2" fill="#676762"/>
+  <text x="56" y="1484" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">matched: same kind and axis, and the same number of stacked blocks</text>
+  <rect x="40" y="1499" width="10" height="10" rx="2" fill="#BC382A"/>
+  <text x="56" y="1504" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">N vs M: same kind and axis, with N stacked blocks in A and M in B</text>
+  <text x="56" y="1524" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">only A / only B: a stage with no counterpart in the other model</text>
+  <text x="56" y="1544" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">facts: shared (the same value), different, or one side (reported by one model only, shown as --)</text>
+  <text x="56" y="1564" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">on each card: × N stacked blocks and the axis its attention runs over, then its output shape; top right, its exact parameter count</text>
+</svg>

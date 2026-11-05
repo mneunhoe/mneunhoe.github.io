@@ -1,0 +1,943 @@
+{
+  "tabfound": "0.0.0.9000",
+  "styles": ["cards", "tufte", "glyphs", "icicle", "schematic"],
+  "themes": ["light", "dark"],
+  "backgrounds": {
+    "light": "#f5f5f5",
+    "dark": "#1d1e20"
+  },
+  "models": [
+    {
+      "key": "tabpfn",
+      "id": "tabpfn-v2.5-classifier",
+      "backend": "tabpfn",
+      "title": "TabPFN v2.5 - classifier",
+      "subtitle": "Prior-Labs  -  per-feature transformer, two-way attention  ·  10.7 M parameters",
+      "params": 10718218,
+      "stages": 8,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1350
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 1596
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1114
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1262
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1303
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1395
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 845
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1480
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 1515
+          }
+        ]
+      }
+    },
+    {
+      "key": "tabpfn26",
+      "id": "tabpfn-v2.6-classifier",
+      "backend": "tabpfn26",
+      "title": "TabPFN v2.6 - classifier",
+      "subtitle": "Prior-Labs  -  per-feature transformer, two-way attention  ·  10.7 M parameters",
+      "params": 10732042,
+      "stages": 8,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1350
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 1596
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1098
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1246
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1303
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1395
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 883
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1480
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 1515
+          }
+        ]
+      }
+    },
+    {
+      "key": "tabpfn3",
+      "id": "tabpfn-v3-classifier",
+      "backend": "tabpfn3",
+      "title": "TabPFN v3 - classifier",
+      "subtitle": "Prior-Labs  -  three stages: per column, per row, in context  ·  53.2 M parameters",
+      "params": 53153144,
+      "stages": 10,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1618
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 2452
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1344
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1745
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1593
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1873
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1070
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2446
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2481
+          }
+        ]
+      }
+    },
+    {
+      "key": "tabpfn35",
+      "id": "tabpfn-v3.5",
+      "backend": "tabpfn35",
+      "title": "TabPFN v3.5 - classifier",
+      "subtitle": "Prior-Labs  -  one multitask checkpoint; three stages: per column, per row, in context  ·  219.0 M parameters",
+      "params": 218982656,
+      "stages": 13,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1909
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 2862
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1585
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 2040
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1866
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 2202
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1176
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2840
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2875
+          }
+        ]
+      }
+    },
+    {
+      "key": "tabicl",
+      "id": "tabicl-v2-classifier",
+      "backend": "tabicl",
+      "title": "TabICL v2 - classifier",
+      "subtitle": "soda-inria  -  column set transformer -> row encoder -> in-context stack  ·  27.6 M parameters",
+      "params": 27552258,
+      "stages": 10,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1631
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 2348
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1377
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1724
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1592
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1872
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1056
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2341
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2376
+          }
+        ]
+      }
+    },
+    {
+      "key": "tabfm",
+      "id": "tabfm-1.0.0-classifier",
+      "backend": "tabfm",
+      "title": "TabFM - classifier",
+      "subtitle": "Google  -  column and row stages run twice, then an in-context stack  ·  1.64 B parameters",
+      "params": 1639444298,
+      "stages": 11,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1755
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 3665
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1458
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 2378
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1690
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 2418
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1213
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 4042
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 4092
+          }
+        ]
+      }
+    },
+    {
+      "key": "mitra",
+      "id": "mitra-classifier",
+      "backend": "mitra",
+      "title": "Mitra - classifier",
+      "subtitle": "AutoGluon  -  one stack, attending across rows and across features  ·  75.7 M parameters",
+      "params": 75670026,
+      "stages": 8,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1336
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 1660
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1130
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1314
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1303
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1427
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 883
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1614
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 1649
+          }
+        ]
+      }
+    },
+    {
+      "key": "kumo",
+      "id": "kumo-tabular-small-classifier",
+      "backend": "kumo",
+      "title": "Kumo Tabular small - classifier",
+      "subtitle": "NVIDIA  -  cell embedding -> column/row blocks -> in-context stack  ·  27.5 M parameters",
+      "params": 27458378,
+      "stages": 10,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1651
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 2524
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1447
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1881
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1612
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1940
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1037
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2461
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2496
+          }
+        ]
+      }
+    },
+    {
+      "key": "kumo-medium",
+      "id": "kumo-tabular-medium-classifier",
+      "backend": "kumo",
+      "title": "Kumo Tabular medium - classifier",
+      "subtitle": "NVIDIA  -  cell embedding -> column/row blocks -> in-context stack  ·  61.5 M parameters",
+      "params": 61485626,
+      "stages": 11,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1735
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 2608
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1493
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1927
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1690
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 2034
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1037
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2548
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2583
+          }
+        ]
+      }
+    },
+    {
+      "key": "kumo-large",
+      "id": "kumo-tabular-large-classifier",
+      "backend": "kumo",
+      "title": "Kumo Tabular large - classifier",
+      "subtitle": "NVIDIA  -  cell embedding -> column/row blocks -> in-context stack  ·  213.7 M parameters",
+      "params": 213668602,
+      "stages": 10,
+      "views": {
+        "cards": [
+          {
+            "detail": "overview",
+            "width": 906,
+            "height": 1651
+          },
+          {
+            "detail": "full",
+            "width": 906,
+            "height": 2524
+          }
+        ],
+        "tufte": [
+          {
+            "detail": "overview",
+            "width": 964,
+            "height": 1447
+          },
+          {
+            "detail": "full",
+            "width": 964,
+            "height": 1881
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1612
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1956
+          }
+        ],
+        "icicle": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1037
+          }
+        ],
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2496
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2531
+          }
+        ]
+      }
+    }
+  ],
+  "compare": [
+    {
+      "a": "tabpfn",
+      "b": "tabpfn26",
+      "width": 890,
+      "height": 1237
+    },
+    {
+      "a": "tabpfn",
+      "b": "tabpfn3",
+      "width": 890,
+      "height": 1638
+    },
+    {
+      "a": "tabpfn",
+      "b": "tabpfn35",
+      "width": 890,
+      "height": 1818
+    },
+    {
+      "a": "tabpfn",
+      "b": "tabicl",
+      "width": 890,
+      "height": 1612
+    },
+    {
+      "a": "tabpfn",
+      "b": "tabfm",
+      "width": 890,
+      "height": 1686
+    },
+    {
+      "a": "tabpfn",
+      "b": "mitra",
+      "width": 890,
+      "height": 1367
+    },
+    {
+      "a": "tabpfn",
+      "b": "kumo",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "tabpfn",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1724
+    },
+    {
+      "a": "tabpfn",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "tabpfn26",
+      "b": "tabpfn3",
+      "width": 890,
+      "height": 1638
+    },
+    {
+      "a": "tabpfn26",
+      "b": "tabpfn35",
+      "width": 890,
+      "height": 1818
+    },
+    {
+      "a": "tabpfn26",
+      "b": "tabicl",
+      "width": 890,
+      "height": 1612
+    },
+    {
+      "a": "tabpfn26",
+      "b": "tabfm",
+      "width": 890,
+      "height": 1686
+    },
+    {
+      "a": "tabpfn26",
+      "b": "mitra",
+      "width": 890,
+      "height": 1387
+    },
+    {
+      "a": "tabpfn26",
+      "b": "kumo",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "tabpfn26",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1724
+    },
+    {
+      "a": "tabpfn26",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "tabpfn3",
+      "b": "tabpfn35",
+      "width": 890,
+      "height": 1660
+    },
+    {
+      "a": "tabpfn3",
+      "b": "tabicl",
+      "width": 890,
+      "height": 1544
+    },
+    {
+      "a": "tabpfn3",
+      "b": "tabfm",
+      "width": 890,
+      "height": 1572
+    },
+    {
+      "a": "tabpfn3",
+      "b": "mitra",
+      "width": 890,
+      "height": 1630
+    },
+    {
+      "a": "tabpfn3",
+      "b": "kumo",
+      "width": 890,
+      "height": 1628
+    },
+    {
+      "a": "tabpfn3",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "tabpfn3",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1628
+    },
+    {
+      "a": "tabpfn35",
+      "b": "tabicl",
+      "width": 890,
+      "height": 1772
+    },
+    {
+      "a": "tabpfn35",
+      "b": "tabfm",
+      "width": 890,
+      "height": 1800
+    },
+    {
+      "a": "tabpfn35",
+      "b": "mitra",
+      "width": 890,
+      "height": 1858
+    },
+    {
+      "a": "tabpfn35",
+      "b": "kumo",
+      "width": 890,
+      "height": 1808
+    },
+    {
+      "a": "tabpfn35",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1856
+    },
+    {
+      "a": "tabpfn35",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1808
+    },
+    {
+      "a": "tabicl",
+      "b": "tabfm",
+      "width": 890,
+      "height": 1634
+    },
+    {
+      "a": "tabicl",
+      "b": "mitra",
+      "width": 890,
+      "height": 1700
+    },
+    {
+      "a": "tabicl",
+      "b": "kumo",
+      "width": 890,
+      "height": 1650
+    },
+    {
+      "a": "tabicl",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1698
+    },
+    {
+      "a": "tabicl",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1650
+    },
+    {
+      "a": "tabfm",
+      "b": "mitra",
+      "width": 890,
+      "height": 1726
+    },
+    {
+      "a": "tabfm",
+      "b": "kumo",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "tabfm",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1724
+    },
+    {
+      "a": "tabfm",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1676
+    },
+    {
+      "a": "mitra",
+      "b": "kumo",
+      "width": 890,
+      "height": 1744
+    },
+    {
+      "a": "mitra",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1792
+    },
+    {
+      "a": "mitra",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1744
+    },
+    {
+      "a": "kumo",
+      "b": "kumo-medium",
+      "width": 890,
+      "height": 1522
+    },
+    {
+      "a": "kumo",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1454
+    },
+    {
+      "a": "kumo-medium",
+      "b": "kumo-large",
+      "width": 890,
+      "height": 1502
+    }
+  ]
+}
