@@ -293,26 +293,73 @@
   img.addEventListener("load", function () { img.classList.remove("tf-loading"); });
   img.addEventListener("error", function () { img.classList.remove("tf-loading"); });
 
+  // Downloads are transparent. The figures on the page are drawn on the
+  // site's background, which is the SVG's first element: a rect the size
+  // of the whole figure. Downloads drop it, so a figure sits on whatever
+  // slide or document it is put in. Fills inside the drawing stay.
+  function transparentSvg(view) {
+    return fetch(view.src).then(function (r) {
+      if (!r.ok) throw new Error("could not fetch " + view.src);
+      return r.text();
+    }).then(function (text) {
+      var doc = new DOMParser().parseFromString(text, "image/svg+xml");
+      var svg = doc.documentElement;
+      var bg = svg.querySelector(":scope > rect");
+      if (bg && bg.getAttribute("width") === svg.getAttribute("width") &&
+          bg.getAttribute("height") === svg.getAttribute("height")) {
+        bg.remove();
+      }
+      return new Blob([new XMLSerializer().serializeToString(doc)],
+                      { type: "image/svg+xml" });
+    });
+  }
+
   // PNGs are drawn here from the SVG rather than shipped, at twice the
   // figure's size so they stay sharp on a slide or in a document.
   var PNG_SCALE = 2;
 
   function pngBlob(view) {
-    return new Promise(function (resolve, reject) {
-      var source = new Image();
-      source.onload = function () {
-        var canvas = document.createElement("canvas");
-        canvas.width = view.size.width * PNG_SCALE;
-        canvas.height = view.size.height * PNG_SCALE;
-        canvas.getContext("2d").drawImage(source, 0, 0, canvas.width, canvas.height);
-        canvas.toBlob(function (blob) {
-          if (blob) resolve(blob); else reject(new Error("PNG encoding failed"));
-        }, "image/png");
-      };
-      source.onerror = reject;
-      source.src = view.src;
+    return transparentSvg(view).then(function (svgBlob) {
+      var url = URL.createObjectURL(svgBlob);
+      return new Promise(function (resolve, reject) {
+        var source = new Image();
+        source.onload = function () {
+          var canvas = document.createElement("canvas");
+          canvas.width = view.size.width * PNG_SCALE;
+          canvas.height = view.size.height * PNG_SCALE;
+          canvas.getContext("2d").drawImage(source, 0, 0, canvas.width, canvas.height);
+          URL.revokeObjectURL(url);
+          canvas.toBlob(function (blob) {
+            if (blob) resolve(blob); else reject(new Error("PNG encoding failed"));
+          }, "image/png");
+        };
+        source.onerror = function (e) { URL.revokeObjectURL(url); reject(e); };
+        source.src = url;
+      });
     });
   }
+
+  function save(blob, file) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = file;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  // Without the script the link still downloads the figure as shown.
+  download.addEventListener("click", function (e) {
+    var view = current;
+    e.preventDefault();
+    transparentSvg(view).then(function (blob) {
+      save(blob, view.file);
+    }).catch(function () {
+      window.open(view.src, "_blank", "noopener");
+    });
+  });
 
   var png = $(".tf-png");
   png.hidden = false;
@@ -321,14 +368,7 @@
     png.disabled = true;
     png.textContent = "Drawing PNG…";
     pngBlob(view).then(function (blob) {
-      var url = URL.createObjectURL(blob);
-      var a = document.createElement("a");
-      a.href = url;
-      a.download = view.file.replace(/\.svg$/, ".png");
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+      save(blob, view.file.replace(/\.svg$/, ".png"));
     }).catch(function () {
       window.open(view.src, "_blank", "noopener");
     }).then(function () {
