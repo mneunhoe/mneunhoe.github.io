@@ -163,7 +163,6 @@
       var label = document.createElement("label");
       label.htmlFor = id;
       label.textContent = o.label;
-      if (o.title) label.title = o.title;
       fieldset.appendChild(input);
       fieldset.appendChild(label);
     });
@@ -216,9 +215,6 @@
   function render() {
     var theme = effectiveTheme();
     var title = $(".tf-title");
-    var sub = $(".tf-sub");
-    var modelNote = $(".tf-model-note");
-    var styleNote = $(".tf-style-note");
 
     if (state.mode === "compare") {
       var p = pair();
@@ -227,9 +223,6 @@
         name(p.a) + " and " + name(p.b) + " side by side, stage against stage.",
         file);
       title.textContent = name(p.a) + " and " + name(p.b);
-      sub.textContent = name(p.a) + " on the left, " + name(p.b) + " on the right.";
-      modelNote.textContent = text.compare.note;
-      styleNote.hidden = true;
       return;
     }
 
@@ -247,18 +240,6 @@
     span.className = "tf-title-style";
     span.textContent = "· " + style.label + (detail === "full" ? ", full" : "");
     title.appendChild(span);
-    sub.textContent = m.subtitle;
-    modelNote.textContent = text.models[m.key].note;
-
-    styleNote.hidden = false;
-    styleNote.innerHTML = "";
-    var q = document.createElement("strong");
-    q.textContent = style.question + ".";
-    styleNote.appendChild(q);
-    var extra = "";
-    if (details(m.key, state.style).indexOf("full") < 0) extra = " " + text.details.none;
-    else if (detail === "full") extra = " " + text.details.full.note;
-    styleNote.appendChild(document.createTextNode(" " + style.note + extra));
   }
 
   function update() {
@@ -273,7 +254,7 @@
   fillSelect($("#tf-a"), state.a);
   fillSelect($("#tf-b"), state.b);
   fillSegments($('[data-name="style"]'), manifest.styles.map(function (s) {
-    return { value: s, label: text.styles[s].label, title: text.styles[s].question };
+    return { value: s, label: text.styles[s].label };
   }));
   fillSegments($('[data-name="detail"]'), ["overview", "full"].map(function (d) {
     return { value: d, label: text.details[d].label };

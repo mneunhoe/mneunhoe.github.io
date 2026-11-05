@@ -92,9 +92,6 @@
 
   <div class="tf-caption" aria-live="polite">
     <h3 class="tf-title">{{ $dm.name }}{{ with $ds }} <span class="tf-title-style">· {{ .label }}</span>{{ end }}</h3>
-    <p class="tf-sub">{{ $dm.subtitle }}</p>
-    <p class="tf-note tf-model-note">{{ $dm.note }}</p>
-    <p class="tf-note tf-style-note">{{ with $ds }}<strong>{{ .question }}.</strong> {{ .note }}{{ end }}</p>
   </div>
 
   <figure class="tf-figure">
@@ -110,7 +107,6 @@
   </figure>
 
   <noscript>
-    <p>The picker needs JavaScript. Every model in the default style:</p>
     <ul>
       {{- range $m.models }}
       <li><a href="{{ $base }}/{{ .key }}/cards-overview-light.svg">{{ (index $text.models .key).name }}</a></li>

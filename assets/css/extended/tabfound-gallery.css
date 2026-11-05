@@ -151,16 +151,6 @@
     font-weight: 400;
 }
 
-.post-content .tf-caption p {
-    margin: 0 0 10px;
-    max-width: 720px;
-}
-
-.post-content .tf-caption p.tf-sub {
-    color: var(--secondary);
-    font-size: 15px;
-}
-
 .tf-figure {
     margin: 0;
 }
