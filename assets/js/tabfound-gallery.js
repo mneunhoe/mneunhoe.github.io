@@ -198,7 +198,10 @@
   var open = $(".tf-open");
   var download = $(".tf-download");
 
+  var current = null;
+
   function show(src, size, alt, file) {
+    current = { src: src, size: size, file: file };
     if (img.getAttribute("src") !== src) {
       img.classList.add("tf-loading");
       img.width = size.width;
@@ -289,6 +292,50 @@
 
   img.addEventListener("load", function () { img.classList.remove("tf-loading"); });
   img.addEventListener("error", function () { img.classList.remove("tf-loading"); });
+
+  // PNGs are drawn here from the SVG rather than shipped, at twice the
+  // figure's size so they stay sharp on a slide or in a document.
+  var PNG_SCALE = 2;
+
+  function pngBlob(view) {
+    return new Promise(function (resolve, reject) {
+      var source = new Image();
+      source.onload = function () {
+        var canvas = document.createElement("canvas");
+        canvas.width = view.size.width * PNG_SCALE;
+        canvas.height = view.size.height * PNG_SCALE;
+        canvas.getContext("2d").drawImage(source, 0, 0, canvas.width, canvas.height);
+        canvas.toBlob(function (blob) {
+          if (blob) resolve(blob); else reject(new Error("PNG encoding failed"));
+        }, "image/png");
+      };
+      source.onerror = reject;
+      source.src = view.src;
+    });
+  }
+
+  var png = $(".tf-png");
+  png.hidden = false;
+  png.addEventListener("click", function () {
+    var view = current;
+    png.disabled = true;
+    png.textContent = "Drawing PNG…";
+    pngBlob(view).then(function (blob) {
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = view.file.replace(/\.svg$/, ".png");
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    }).catch(function () {
+      window.open(view.src, "_blank", "noopener");
+    }).then(function () {
+      png.disabled = false;
+      png.textContent = "Download PNG";
+    });
+  });
 
   var copy = $(".tf-copy");
   if (navigator.clipboard && window.isSecureContext) {
