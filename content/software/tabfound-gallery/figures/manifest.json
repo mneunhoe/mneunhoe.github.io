@@ -1,6 +1,6 @@
 {
   "tabfound": "0.0.0.9000",
-  "styles": ["cards", "tufte", "glyphs", "schematic"],
+  "styles": ["schematic", "glyphs", "cards", "tufte"],
   "themes": ["light", "dark"],
   "backgrounds": {
     "light": "#f5f5f5",
@@ -17,6 +17,30 @@
       "params": 10718218,
       "stages": 8,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1480
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 1515
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1303
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1395
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -40,6 +64,29 @@
             "width": 964,
             "height": 1262
           }
+        ]
+      }
+    },
+    {
+      "key": "tabpfn26",
+      "id": "tabpfn-v2.6-classifier",
+      "backend": "tabpfn26",
+      "title": "TabPFN v2.6 - classifier",
+      "subtitle": "Prior-Labs  -  per-feature transformer, two-way attention  ·  10.7 M parameters",
+      "params": 10732042,
+      "stages": 8,
+      "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1480
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 1515
+          }
         ],
         "glyphs": [
           {
@@ -53,29 +100,6 @@
             "height": 1395
           }
         ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1480
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 1515
-          }
-        ]
-      }
-    },
-    {
-      "key": "tabpfn26",
-      "id": "tabpfn-v2.6-classifier",
-      "backend": "tabpfn26",
-      "title": "TabPFN v2.6 - classifier",
-      "subtitle": "Prior-Labs  -  per-feature transformer, two-way attention  ·  10.7 M parameters",
-      "params": 10732042,
-      "stages": 8,
-      "views": {
         "cards": [
           {
             "detail": "overview",
@@ -99,30 +123,6 @@
             "width": 964,
             "height": 1246
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1303
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 1395
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1480
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 1515
-          }
         ]
       }
     },
@@ -135,6 +135,30 @@
       "params": 53153144,
       "stages": 10,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2461
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2496
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1593
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1873
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -158,30 +182,6 @@
             "width": 964,
             "height": 1745
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1593
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 1873
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 2461
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 2496
-          }
         ]
       }
     },
@@ -194,6 +194,30 @@
       "params": 218982656,
       "stages": 13,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2840
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2875
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1866
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 2202
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -217,30 +241,6 @@
             "width": 964,
             "height": 2040
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1866
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 2202
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 2840
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 2875
-          }
         ]
       }
     },
@@ -253,6 +253,30 @@
       "params": 27552258,
       "stages": 10,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2341
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2376
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1592
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1872
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -276,30 +300,6 @@
             "width": 964,
             "height": 1724
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1592
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 1872
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 2341
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 2376
-          }
         ]
       }
     },
@@ -312,6 +312,30 @@
       "params": 1639444298,
       "stages": 11,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 4057
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 4107
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1690
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 2418
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -335,30 +359,6 @@
             "width": 964,
             "height": 2378
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1690
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 2418
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 4057
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 4107
-          }
         ]
       }
     },
@@ -371,6 +371,30 @@
       "params": 75670026,
       "stages": 8,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 1614
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 1649
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1303
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1427
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -394,30 +418,6 @@
             "width": 964,
             "height": 1314
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1303
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 1427
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 1614
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 1649
-          }
         ]
       }
     },
@@ -430,6 +430,30 @@
       "params": 27458378,
       "stages": 10,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2476
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2511
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1620
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1948
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -453,30 +477,6 @@
             "width": 964,
             "height": 1897
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1620
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 1948
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 2476
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 2511
-          }
         ]
       }
     },
@@ -489,6 +489,30 @@
       "params": 61485626,
       "stages": 11,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2563
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2598
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1698
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 2042
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -512,30 +536,6 @@
             "width": 964,
             "height": 1943
           }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1698
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 2042
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 2563
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 2598
-          }
         ]
       }
     },
@@ -548,6 +548,30 @@
       "params": 213668602,
       "stages": 10,
       "views": {
+        "schematic": [
+          {
+            "detail": "overview",
+            "width": 940,
+            "height": 2511
+          },
+          {
+            "detail": "full",
+            "width": 940,
+            "height": 2546
+          }
+        ],
+        "glyphs": [
+          {
+            "detail": "overview",
+            "width": 860,
+            "height": 1620
+          },
+          {
+            "detail": "full",
+            "width": 860,
+            "height": 1964
+          }
+        ],
         "cards": [
           {
             "detail": "overview",
@@ -570,30 +594,6 @@
             "detail": "full",
             "width": 964,
             "height": 1897
-          }
-        ],
-        "glyphs": [
-          {
-            "detail": "overview",
-            "width": 860,
-            "height": 1620
-          },
-          {
-            "detail": "full",
-            "width": 860,
-            "height": 1964
-          }
-        ],
-        "schematic": [
-          {
-            "detail": "overview",
-            "width": 940,
-            "height": 2511
-          },
-          {
-            "detail": "full",
-            "width": 940,
-            "height": 2546
           }
         ]
       }

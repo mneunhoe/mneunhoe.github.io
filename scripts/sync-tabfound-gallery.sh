@@ -33,7 +33,7 @@ HIGHLIGHT="#4B0055,#007094,#00BE7D,#FDE333"
 
 # The styles the gallery offers, in the order of its buttons. tabfound's
 # icicle is left out.
-STYLES="cards,tufte,glyphs,schematic"
+STYLES="schematic,glyphs,cards,tufte"
 
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
