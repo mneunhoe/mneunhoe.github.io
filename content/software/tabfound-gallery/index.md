@@ -12,7 +12,7 @@ ShowToc: false
 ShowPostNavLinks: false
 ---
 
-[← tabfound overview](/software/tabfound/)
+You can find more about my [tabfound R package here](/software/tabfound/).
 
 {{< tabfound-gallery >}}
 
