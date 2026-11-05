@@ -8,44 +8,44 @@
   <text x="138" y="115" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-style="italic" text-anchor="end" fill="#737373">phase</text>
   <text x="138" y="164" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-style="italic" text-anchor="end" fill="#737373">stage</text>
   <text x="138" y="213" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-style="italic" text-anchor="end" fill="#737373">sublayers, all blocks</text>
-  <rect x="150" y="141" width="0.8" height="46" fill="#0072B2"/>
-  <rect x="150" y="190" width="0.8" height="46" fill="#3D93C3"/>
-  <rect x="150.01" y="141" width="0.8" height="46" fill="#0072B2"/>
-  <rect x="150.01" y="190" width="0.8" height="46" fill="#3D93C3"/>
+  <rect x="150" y="141" width="0.8" height="46" fill="#007094"/>
+  <rect x="150" y="190" width="0.8" height="46" fill="#3D91AC"/>
+  <rect x="150.01" y="141" width="0.8" height="46" fill="#007094"/>
+  <rect x="150.01" y="190" width="0.8" height="46" fill="#3D91AC"/>
   <rect x="150" y="92" width="0.8" height="46" fill="#434343"/>
-  <rect x="150.3" y="141" width="10.77" height="46" fill="#D55E00"/>
-  <rect x="150.3" y="190" width="0.8" height="46" fill="#3D93C3"/>
+  <rect x="150.3" y="141" width="10.77" height="46" fill="#4b0055"/>
+  <rect x="150.3" y="190" width="0.8" height="46" fill="#3D91AC"/>
   <rect x="151" y="190" width="0.8" height="46" fill="#C7C6C1"/>
   <rect x="151" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="151.01" y="190" width="1.72" height="46" fill="#DD843D"/>
+  <rect x="151.01" y="190" width="1.72" height="46" fill="#763D7D"/>
   <rect x="154.23" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="154.23" y="190" width="1.27" height="46" fill="#3DB494"/>
+  <rect x="154.23" y="190" width="1.27" height="46" fill="#3DCC9B"/>
   <rect x="157.01" y="190" width="0.8" height="46" fill="#C7C6C1"/>
   <rect x="157.01" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="157.02" y="190" width="1.27" height="46" fill="#DD843D"/>
+  <rect x="157.02" y="190" width="1.27" height="46" fill="#763D7D"/>
   <rect x="159.79" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="159.8" y="190" width="1.27" height="46" fill="#3DB494"/>
+  <rect x="159.8" y="190" width="1.27" height="46" fill="#3DCC9B"/>
   <rect x="150.3" y="92" width="10.77" height="46" fill="#434343"/>
-  <rect x="162.57" y="141" width="4.07" height="46" fill="#D55E00"/>
-  <rect x="162.57" y="190" width="0.8" height="46" fill="#3D93C3"/>
-  <rect x="162.57" y="190" width="0.8" height="46" fill="#3D93C3"/>
+  <rect x="162.57" y="141" width="4.07" height="46" fill="#4b0055"/>
+  <rect x="162.57" y="190" width="0.8" height="46" fill="#3D91AC"/>
+  <rect x="162.57" y="190" width="0.8" height="46" fill="#3D91AC"/>
   <rect x="162.58" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="162.58" y="190" width="1.27" height="46" fill="#DD843D"/>
+  <rect x="162.58" y="190" width="1.27" height="46" fill="#763D7D"/>
   <rect x="165.36" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="165.36" y="190" width="1.27" height="46" fill="#3DB494"/>
+  <rect x="165.36" y="190" width="1.27" height="46" fill="#3DCC9B"/>
   <rect x="168.14" y="190" width="0.8" height="46" fill="#C7C6C1"/>
   <rect x="162.57" y="92" width="4.07" height="46" fill="#434343"/>
-  <rect x="168.14" y="141" width="0.8" height="46" fill="#0072B2"/>
-  <rect x="168.14" y="190" width="0.8" height="46" fill="#3D93C3"/>
-  <rect x="169.3" y="141" width="723.17" height="46" fill="#D55E00"/>
-  <text x="175.3" y="156" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#111111">In-context learning block</text>
-  <text x="175.3" y="173" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#111111">51.4 M, 24 blocks</text>
+  <rect x="168.14" y="141" width="0.8" height="46" fill="#007094"/>
+  <rect x="168.14" y="190" width="0.8" height="46" fill="#3D91AC"/>
+  <rect x="169.3" y="141" width="723.17" height="46" fill="#4b0055"/>
+  <text x="175.3" y="156" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#ffffff">In-context learning block</text>
+  <text x="175.3" y="173" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#ffffff">51.4 M, 24 blocks</text>
   <rect x="169.3" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="169.47" y="190" width="367.73" height="46" fill="#DD843D"/>
-  <text x="175.47" y="205" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#111111">Attention over rows, training-only keys</text>
-  <text x="175.47" y="222" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#111111">26.2 M</text>
+  <rect x="169.47" y="190" width="367.73" height="46" fill="#763D7D"/>
+  <text x="175.47" y="205" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#ffffff">Attention over rows, training-only keys</text>
+  <text x="175.47" y="222" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#ffffff">26.2 M</text>
   <rect x="538.69" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="538.87" y="190" width="353.59" height="46" fill="#3DB494"/>
+  <rect x="538.87" y="190" width="353.59" height="46" fill="#3DCC9B"/>
   <text x="544.87" y="205" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" font-weight="600" fill="#111111">MLP, GELU</text>
   <text x="544.87" y="222" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#111111">25.2 M</text>
   <rect x="168.14" y="92" width="724.32" height="46" fill="#434343"/>
@@ -53,8 +53,8 @@
   <text x="174.14" y="124" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" fill="#ffffff">51.4 M, 97%</text>
   <rect x="893.96" y="141" width="0.8" height="46" fill="#b8b7b0"/>
   <rect x="893.96" y="190" width="0.8" height="46" fill="#C7C6C1"/>
-  <rect x="893.97" y="141" width="4.53" height="46" fill="#CC79A7"/>
-  <rect x="893.97" y="190" width="4.53" height="46" fill="#D698BA"/>
+  <rect x="893.97" y="141" width="4.53" height="46" fill="#fde333"/>
+  <rect x="893.97" y="190" width="4.53" height="46" fill="#FBE864"/>
   <rect x="893.96" y="92" width="4.54" height="46" fill="#434343"/>
   <line x1="150" y1="250" x2="900" y2="250" stroke="#737373" stroke-width="0.8" stroke-linecap="round"/>
   <line x1="150" y1="250" x2="150" y2="254" stroke="#737373" stroke-width="0.8" stroke-linecap="round"/>
@@ -133,15 +133,15 @@
   <text x="40" y="842" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#737373">HOW TO READ</text>
   <text x="56" y="860" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">three bands: the phases, then the stages in them, then each stage's sublayers summed over all of its stacked blocks</text>
   <text x="56" y="880" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">width: parameters, on one linear scale for the whole figure; a stage with no listed sublayers fills its own width in the sublayer band</text>
-  <rect x="40" y="895" width="10" height="10" rx="2" fill="#0072B2"/>
+  <rect x="40" y="895" width="10" height="10" rx="2" fill="#007094"/>
   <text x="56" y="900" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">embedding / encoder (its sublayers in a muted shade)</text>
-  <rect x="40" y="915" width="10" height="10" rx="2" fill="#D55E00"/>
+  <rect x="40" y="915" width="10" height="10" rx="2" fill="#4b0055"/>
   <text x="56" y="920" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">attention (its sublayers in a muted shade)</text>
-  <rect x="40" y="935" width="10" height="10" rx="2" fill="#009E73"/>
+  <rect x="40" y="935" width="10" height="10" rx="2" fill="#00be7d"/>
   <text x="56" y="940" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">feed-forward (its sublayers in a muted shade)</text>
   <rect x="40" y="955" width="10" height="10" rx="2" fill="#b8b7b0"/>
   <text x="56" y="960" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">normalisation (its sublayers in a muted shade)</text>
-  <rect x="40" y="975" width="10" height="10" rx="2" fill="#CC79A7"/>
+  <rect x="40" y="975" width="10" height="10" rx="2" fill="#fde333"/>
   <text x="56" y="980" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">decoder head (its sublayers in a muted shade)</text>
   <text x="56" y="1000" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">stages with no parameters (the input, a weightless embedding, the prediction) have no width and are not drawn</text>
 </svg>

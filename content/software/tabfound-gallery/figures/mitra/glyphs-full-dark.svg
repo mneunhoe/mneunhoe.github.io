@@ -144,36 +144,36 @@
   <text x="740" y="349" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" fill="#FAFAFB">5.6 k</text>
   <rect x="40" y="420" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="52" y="420" width="10" height="7" rx="1" fill="#313234"/>
-  <rect x="64" y="420" width="10" height="7" rx="1" fill="#56B4E9"/>
+  <rect x="64" y="420" width="10" height="7" rx="1" fill="#9A70A0"/>
   <rect x="76" y="420" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="88" y="420" width="10" height="7" rx="1" fill="#313234"/>
-  <rect x="40" y="429" width="10" height="7" rx="1" fill="#E69F00"/>
-  <rect x="52" y="429" width="10" height="7" rx="1" fill="#E69F00"/>
-  <rect x="64" y="429" width="10" height="7" rx="1" fill="#E69F00"/>
-  <rect x="76" y="429" width="10" height="7" rx="1" fill="#E69F00"/>
-  <rect x="88" y="429" width="10" height="7" rx="1" fill="#E69F00"/>
+  <rect x="40" y="429" width="10" height="7" rx="1" fill="#2987A5"/>
+  <rect x="52" y="429" width="10" height="7" rx="1" fill="#2987A5"/>
+  <rect x="64" y="429" width="10" height="7" rx="1" fill="#2987A5"/>
+  <rect x="76" y="429" width="10" height="7" rx="1" fill="#2987A5"/>
+  <rect x="88" y="429" width="10" height="7" rx="1" fill="#2987A5"/>
   <rect x="40" y="438" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="52" y="438" width="10" height="7" rx="1" fill="#313234"/>
-  <rect x="64" y="438" width="10" height="7" rx="1" fill="#56B4E9"/>
+  <rect x="64" y="438" width="10" height="7" rx="1" fill="#9A70A0"/>
   <rect x="76" y="438" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="88" y="438" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="40" y="447" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="52" y="447" width="10" height="7" rx="1" fill="#313234"/>
-  <rect x="64" y="447" width="10" height="7" rx="1" fill="#56B4E9"/>
+  <rect x="64" y="447" width="10" height="7" rx="1" fill="#9A70A0"/>
   <rect x="76" y="447" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="88" y="447" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="40" y="460" width="10" height="7" rx="1" fill="#28292B"/>
   <rect x="52" y="460" width="10" height="7" rx="1" fill="#28292B"/>
-  <rect x="64" y="460" width="10" height="7" rx="1" fill="#56B4E9"/>
+  <rect x="64" y="460" width="10" height="7" rx="1" fill="#9A70A0"/>
   <rect x="76" y="460" width="10" height="7" rx="1" fill="#28292B"/>
   <rect x="88" y="460" width="10" height="7" rx="1" fill="#28292B"/>
   <rect x="40" y="469" width="10" height="7" rx="1" fill="#28292B"/>
   <rect x="52" y="469" width="10" height="7" rx="1" fill="#28292B"/>
-  <rect x="64" y="469" width="10" height="7" rx="1" fill="#56B4E9"/>
+  <rect x="64" y="469" width="10" height="7" rx="1" fill="#9A70A0"/>
   <rect x="76" y="469" width="10" height="7" rx="1" fill="#28292B"/>
   <rect x="88" y="469" width="10" height="7" rx="1" fill="#28292B"/>
-  <line x1="59" y1="463.5" x2="59" y2="425" stroke="#56B4E9" stroke-width="1.2" stroke-linecap="round"/>
-  <polygon points="56,426 62,426 59,420" fill="#56B4E9"/>
+  <line x1="59" y1="463.5" x2="59" y2="425" stroke="#9A70A0" stroke-width="1.2" stroke-linecap="round"/>
+  <polygon points="56,426 62,426 59,420" fill="#9A70A0"/>
   <text x="150" y="427" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13.5px" font-weight="600" fill="#FAFAFB">Layer</text>
   <text x="570" y="427" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11.5px" text-anchor="end" fill="#C3C3C4">× 12</text>
   <text x="150" y="443" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">pre-norm; 4 heads of 128; two attentions, two MLPs of 512 -&gt; 2048</text>
@@ -241,30 +241,30 @@
   <rect x="64" y="707" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="76" y="707" width="10" height="7" rx="1" fill="#313234"/>
   <rect x="88" y="707" width="10" height="7" rx="1" fill="#313234"/>
-  <rect x="40" y="720" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="52" y="720" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="64" y="720" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="76" y="720" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="88" y="720" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="40" y="729" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="52" y="729" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="64" y="729" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="76" y="729" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="88" y="729" width="10" height="7" rx="1" fill="#CC79A7"/>
+  <rect x="40" y="720" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="52" y="720" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="64" y="720" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="76" y="720" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="88" y="720" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="40" y="729" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="52" y="729" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="64" y="729" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="76" y="729" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="88" y="729" width="10" height="7" rx="1" fill="#fde333"/>
   <text x="150" y="687" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13.5px" font-weight="600" fill="#FAFAFB">Output projection</text>
   <text x="150" y="703" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">target column only: Linear(512 -&gt; 10)</text>
   <text x="590" y="687" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C3C3C4">(Q, 10)</text>
   <text x="740" y="687" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="12px" fill="#FAFAFB">5.1 k</text>
-  <rect x="40" y="798" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="52" y="798" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="64" y="798" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="76" y="798" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="88" y="798" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="40" y="807" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="52" y="807" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="64" y="807" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="76" y="807" width="10" height="7" rx="1" fill="#CC79A7"/>
-  <rect x="88" y="807" width="10" height="7" rx="1" fill="#CC79A7"/>
+  <rect x="40" y="798" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="52" y="798" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="64" y="798" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="76" y="798" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="88" y="798" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="40" y="807" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="52" y="807" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="64" y="807" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="76" y="807" width="10" height="7" rx="1" fill="#fde333"/>
+  <rect x="88" y="807" width="10" height="7" rx="1" fill="#fde333"/>
   <text x="150" y="765" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13.5px" font-weight="600" fill="#FAFAFB">Class logits</text>
   <text x="150" y="781" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">10 slots; softmax over the classes seen</text>
   <line x1="150" y1="848" x2="820" y2="848" stroke="#C3C3C4" stroke-width="0.8" stroke-linecap="round"/>
@@ -317,13 +317,13 @@
   <text x="40" y="1199" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#8F9091">HOW TO READ</text>
   <rect x="40" y="1212" width="10" height="10" rx="2" fill="#313234"/>
   <text x="56" y="1217" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">each table: training rows above, test rows below, columns across</text>
-  <rect x="40" y="1232" width="10" height="10" rx="2" fill="#56B4E9"/>
+  <rect x="40" y="1232" width="10" height="10" rx="2" fill="#9A70A0"/>
   <text x="56" y="1237" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">attention across rows, within a column; the arrow points from the test rows to the training rows they read</text>
-  <rect x="40" y="1252" width="10" height="10" rx="2" fill="#E69F00"/>
+  <rect x="40" y="1252" width="10" height="10" rx="2" fill="#2987A5"/>
   <text x="56" y="1257" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">attention across columns or features, within a row</text>
   <rect x="40.5" y="1272.5" width="9" height="9" rx="2" fill="none" stroke="#7A7A7E" stroke-width="1.2"/>
   <text x="56" y="1277" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">outlined cells: an embedding, where every cell becomes a vector</text>
-  <rect x="40" y="1292" width="10" height="10" rx="2" fill="#CC79A7"/>
+  <rect x="40" y="1292" width="10" height="10" rx="2" fill="#fde333"/>
   <text x="56" y="1297" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">the prediction for the test rows</text>
   <text x="56" y="1317" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">× N: the block is stacked N times</text>
   <text x="56" y="1337" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#C3C3C4">over rows / columns / features: the axis this block's attention runs across</text>

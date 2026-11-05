@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="964" height="1314" viewBox="0 0 964 1314">
   <title>Mitra - classifier</title>
-  <desc>AutoGluon  -  one stack, attending across rows and across features  ·  75.7 M parameters. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; S: support rows; Q: query rows; F: features; D: model width (512). Abbreviations: MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); LayerNorm: layer normalisation; KV: keys and values (as in KV cache, KV heads). How to read: × N: the block is stacked N times; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the stage's share of the total; hollow dot: one sublayer's parameters; &quot;/ block&quot; counts one copy of a stacked block; margin colour: the phase, from first (dark) to last (light); output shape: the tensor each stage emits, in the symbols above.</desc>
+  <desc>AutoGluon  -  one stack, attending across rows and across features  ·  75.7 M parameters. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; S: support rows; Q: query rows; F: features; D: model width (512). Abbreviations: MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); LayerNorm: layer normalisation; KV: keys and values (as in KV cache, KV heads). How to read: × N: the block is stacked N times; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the stage's share of the total; hollow dot: one sublayer's parameters; &quot;/ block&quot; counts one copy of a stacked block; margin colour: the phase, one colour each in stage order; output shape: the tensor each stage emits, in the symbols above.</desc>
   <rect width="964" height="1314" fill="#f5f5f5"/>
   <text x="32" y="42" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="22px" fill="#040404">Mitra - classifier</text>
   <text x="32" y="66" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="13px" font-style="italic" fill="#434343">AutoGluon  -  one stack, attending across rows and across features  ·  75.7 M parameters</text>
@@ -18,14 +18,14 @@
   <text x="168" y="274" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">Linear(1 -&gt; 512) per cell</text>
   <text x="516" y="258" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#434343">(B, S + Q, F, D)</text>
   <line x1="662" y1="258" x2="686.25" y2="258" stroke="#E1E1E1" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="682.75" y="254.5" width="7" height="7" rx="3.5" fill="#440053"/>
+  <rect x="682.75" y="254.5" width="7" height="7" rx="3.5" fill="#4b0055"/>
   <text x="840" y="258" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#040404">1.0 k</text>
   <text x="168" y="304" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#040404">Target embedding</text>
   <text x="168" y="320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">a learned vector per class, plus one &quot;unknown&quot; for the</text>
   <text x="168" y="336" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">query rows; prepended as feature column 1</text>
   <text x="516" y="304" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#434343">(B, S + Q, F + 1, D)</text>
   <line x1="662" y1="304" x2="704.02" y2="304" stroke="#E1E1E1" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="700.52" y="300.5" width="7" height="7" rx="3.5" fill="#440053"/>
+  <rect x="700.52" y="300.5" width="7" height="7" rx="3.5" fill="#4b0055"/>
   <text x="840" y="304" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#040404">5.6 k</text>
   <text x="168" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#040404">Layer</text>
   <text x="498" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#434343">× 12</text>
@@ -33,60 +33,60 @@
   <text x="168" y="412" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">-&gt; 2048</text>
   <text x="182" y="430" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">LayerNorm</text>
   <line x1="662" y1="430" x2="686.25" y2="430" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="684.25" y="428" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="684.25" y="428" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="430" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">1.0 k / block</text>
   <text x="182" y="448" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">Attention across rows - query rows read the...</text>
   <text x="498" y="448" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#7D7D7D">over rows</text>
   <line x1="662" y1="448" x2="758.51" y2="448" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="756.51" y="446" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="756.51" y="446" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="448" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">1.1 M / block</text>
   <text x="182" y="466" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">LayerNorm</text>
   <line x1="662" y1="466" x2="686.25" y2="466" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="684.25" y="464" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="684.25" y="464" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="466" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">1.0 k / block</text>
   <text x="182" y="484" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">MLP, GELU</text>
   <line x1="662" y1="484" x2="765.73" y2="484" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="763.73" y="482" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="763.73" y="482" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="484" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">2.1 M / block</text>
   <text x="182" y="502" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">LayerNorm</text>
   <line x1="662" y1="502" x2="686.25" y2="502" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="684.25" y="500" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="684.25" y="500" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="502" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">1.0 k / block</text>
   <text x="182" y="520" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">Attention across features - self-attention</text>
   <text x="498" y="520" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#7D7D7D">over features</text>
   <line x1="662" y1="520" x2="758.51" y2="520" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="756.51" y="518" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="756.51" y="518" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="520" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">1.1 M / block</text>
   <text x="182" y="538" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">LayerNorm</text>
   <line x1="662" y1="538" x2="686.25" y2="538" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="684.25" y="536" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="684.25" y="536" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="538" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">1.0 k / block</text>
   <text x="182" y="556" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">MLP, GELU</text>
   <line x1="662" y1="556" x2="765.73" y2="556" stroke="#E1E1E1" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="763.73" y="554" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#38588B" stroke-width="1"/>
+  <rect x="763.73" y="554" width="4" height="4" rx="2" fill="#f5f5f5" stroke="#007094" stroke-width="1"/>
   <text x="840" y="556" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">2.1 M / block</text>
   <text x="516" y="380" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#434343">(B, S + Q, F + 1, D)</text>
   <line x1="662" y1="380" x2="803.09" y2="380" stroke="#E1E1E1" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="799.59" y="376.5" width="7" height="7" rx="3.5" fill="#38588B"/>
+  <rect x="799.59" y="376.5" width="7" height="7" rx="3.5" fill="#007094"/>
   <text x="840" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#040404">75.7 M</text>
   <text x="892" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#7D7D7D">100%</text>
   <text x="168" y="600" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#040404">Final LayerNorm</text>
   <line x1="662" y1="600" x2="686.25" y2="600" stroke="#E1E1E1" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="682.75" y="596.5" width="7" height="7" rx="3.5" fill="#1F9B88"/>
+  <rect x="682.75" y="596.5" width="7" height="7" rx="3.5" fill="#00A069"/>
   <text x="840" y="600" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#040404">1.0 k</text>
   <text x="168" y="630" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#040404">Output projection</text>
   <text x="168" y="646" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">target column only: Linear(512 -&gt; 10)</text>
   <text x="516" y="630" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#434343">(Q, 10)</text>
   <line x1="662" y1="630" x2="703.04" y2="630" stroke="#E1E1E1" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="699.54" y="626.5" width="7" height="7" rx="3.5" fill="#1F9B88"/>
+  <rect x="699.54" y="626.5" width="7" height="7" rx="3.5" fill="#00A069"/>
   <text x="840" y="630" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#040404">5.1 k</text>
   <text x="168" y="690" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#040404">Class logits</text>
   <text x="168" y="706" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#434343">10 slots; softmax over the classes seen</text>
-  <line x1="158" y1="189" x2="158" y2="343" stroke="#440053" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="189" x2="158" y2="343" stroke="#4b0055" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="196" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#434343">Embed</text>
-  <line x1="158" y1="373" x2="158" y2="563" stroke="#38588B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="373" x2="158" y2="563" stroke="#007094" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="380" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#434343">Transformer</text>
-  <line x1="158" y1="593" x2="158" y2="653" stroke="#1F9B88" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="593" x2="158" y2="653" stroke="#00A069" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="600" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#434343">Decode</text>
   <line x1="686.25" y1="734" x2="803.09" y2="734" stroke="#7D7D7D" stroke-width="0.8" stroke-linecap="round"/>
   <line x1="710" y1="734" x2="710" y2="738" stroke="#7D7D7D" stroke-width="0.8" stroke-linecap="round"/>
@@ -148,6 +148,6 @@
   <text x="168" y="1177" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#434343">dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the</text>
   <text x="168" y="1192" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#434343">stage's share of the total</text>
   <text x="168" y="1212" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#434343">hollow dot: one sublayer's parameters; &quot;/ block&quot; counts one copy of a stacked block</text>
-  <text x="168" y="1232" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#434343">margin colour: the phase, from first (dark) to last (light)</text>
+  <text x="168" y="1232" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#434343">margin colour: the phase, one colour each in stage order</text>
   <text x="168" y="1252" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#434343">output shape: the tensor each stage emits, in the symbols above</text>
 </svg>

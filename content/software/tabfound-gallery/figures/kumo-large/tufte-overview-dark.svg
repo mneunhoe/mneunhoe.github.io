@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="964" height="1447" viewBox="0 0 964 1447">
   <title>Kumo Tabular large - classifier</title>
-  <desc>NVIDIA  -  cell embedding -&gt; column/row blocks -&gt; in-context stack  ·  213.7 M parameters. Symbols in shapes: n: rows in the context (train + test); p: raw features; n_test: test rows (the rows being predicted); R: rows; C: columns. Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); RMSNorm: root-mean-square normalisation; KV: keys and values (as in KV cache, KV heads); NaN: not-a-number: undefined values in the input. How to read: × N: the block is stacked N times; alternating: Column block and Row block take turns, one of each per repeat, rather than one stack after the other; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the stage's share of the total; margin colour: the phase, from first (dark) to last (light); output shape: the tensor each stage emits, in the symbols above.</desc>
+  <desc>NVIDIA  -  cell embedding -&gt; column/row blocks -&gt; in-context stack  ·  213.7 M parameters. Symbols in shapes: n: rows in the context (train + test); p: raw features; n_test: test rows (the rows being predicted); R: rows; C: columns. Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); RMSNorm: root-mean-square normalisation; KV: keys and values (as in KV cache, KV heads); NaN: not-a-number: undefined values in the input. How to read: × N: the block is stacked N times; alternating: Column block and Row block take turns, one of each per repeat, rather than one stack after the other; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the stage's share of the total; margin colour: the phase, one colour each in stage order; output shape: the tensor each stage emits, in the symbols above.</desc>
   <rect width="964" height="1447" fill="#1d1e20"/>
   <text x="32" y="42" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="22px" fill="#FCFCFC">Kumo Tabular large - classifier</text>
   <text x="32" y="66" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="13px" font-style="italic" fill="#C5C6C6">NVIDIA  -  cell embedding -&gt; column/row blocks -&gt; in-context stack  ·  213.7 M parameters</text>
@@ -17,18 +17,18 @@
   <text x="168" y="260" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">categorical; context-mean imputation plus a projection o...</text>
   <text x="516" y="212" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(R, C, 256)</text>
   <line x1="662" y1="212" x2="722.83" y2="212" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="719.33" y="208.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <rect x="719.33" y="208.5" width="7" height="7" rx="3.5" fill="#88578F"/>
   <text x="840" y="212" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">34.2 k</text>
   <text x="168" y="290" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Target embedding (cells)</text>
   <text x="168" y="306" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">added to every cell of the context rows</text>
   <line x1="662" y1="290" x2="695.8" y2="290" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="692.3" y="286.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <rect x="692.3" y="286.5" width="7" height="7" rx="3.5" fill="#88578F"/>
   <text x="840" y="290" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">2.6 k</text>
   <text x="168" y="336" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Readout tokens</text>
   <text x="168" y="352" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">4 learned tokens prepended to every row; the column blocks</text>
   <text x="168" y="368" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">skip them</text>
   <line x1="662" y1="336" x2="686.25" y2="336" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="682.75" y="332.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <rect x="682.75" y="332.5" width="7" height="7" rx="3.5" fill="#88578F"/>
   <text x="840" y="336" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">1.0 k</text>
   <text x="168" y="398" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Column block</text>
   <text x="498" y="398" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 6, alternating  over rows</text>
@@ -37,7 +37,7 @@
   <text x="168" y="446" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">row reads them back; 4 heads</text>
   <text x="516" y="398" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(C, R, 256)</text>
   <line x1="662" y1="398" x2="777.85" y2="398" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="774.35" y="394.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <rect x="774.35" y="394.5" width="7" height="7" rx="3.5" fill="#88578F"/>
   <text x="840" y="398" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">6.7 M</text>
   <text x="892" y="398" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">3%</text>
   <text x="168" y="476" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Row block</text>
@@ -47,13 +47,13 @@
   <text x="168" y="524" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">from the readout tokens only; 4 heads</text>
   <text x="516" y="476" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(R, 4 + C, 256)</text>
   <line x1="662" y1="476" x2="770.16" y2="476" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="766.66" y="472.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <rect x="766.66" y="472.5" width="7" height="7" rx="3.5" fill="#88578F"/>
   <text x="840" y="476" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">3.2 M</text>
   <text x="892" y="476" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">2%</text>
   <text x="168" y="568" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Target embedding (rows)</text>
   <text x="168" y="584" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">added to the context rows</text>
   <line x1="662" y1="568" x2="710.25" y2="568" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="706.75" y="564.5" width="7" height="7" rx="3.5" fill="#3AB876"/>
+  <rect x="706.75" y="564.5" width="7" height="7" rx="3.5" fill="#057396"/>
   <text x="840" y="568" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">10.2 k</text>
   <text x="168" y="614" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">In-context learning block</text>
   <text x="498" y="614" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 24  over rows</text>
@@ -61,22 +61,22 @@
   <text x="168" y="646" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">16 heads of 64; query rows use 2 of the key/value heads</text>
   <text x="516" y="614" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(R, 1024)</text>
   <line x1="662" y1="614" x2="813.31" y2="614" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="809.81" y="610.5" width="7" height="7" rx="3.5" fill="#3AB876"/>
+  <rect x="809.81" y="610.5" width="7" height="7" rx="3.5" fill="#057396"/>
   <text x="840" y="614" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">201.6 M</text>
   <text x="892" y="614" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">94%</text>
   <text x="168" y="690" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Decoder MLP</text>
   <text x="168" y="706" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">1024 -&gt; 2048 -&gt; 10, GELU</text>
   <text x="516" y="690" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(n_test, 10)</text>
   <line x1="662" y1="690" x2="765.83" y2="690" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="762.33" y="686.5" width="7" height="7" rx="3.5" fill="#FDE625"/>
+  <rect x="762.33" y="686.5" width="7" height="7" rx="3.5" fill="#00be7d"/>
   <text x="840" y="690" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">2.1 M</text>
   <text x="168" y="750" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Class logits</text>
   <text x="168" y="766" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">10 slots; error-correcting codes above 10 classes</text>
-  <line x1="158" y1="205" x2="158" y2="531" stroke="#336F8F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="205" x2="158" y2="531" stroke="#88578F" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="212" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Row embedding</text>
-  <line x1="158" y1="561" x2="158" y2="653" stroke="#3AB876" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="561" x2="158" y2="653" stroke="#057396" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="568" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">In-context</text>
-  <line x1="158" y1="683" x2="158" y2="713" stroke="#FDE625" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="683" x2="158" y2="713" stroke="#00be7d" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="690" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Decode</text>
   <line x1="686.25" y1="794" x2="813.31" y2="794" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
   <line x1="710" y1="794" x2="710" y2="798" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
@@ -151,6 +151,6 @@
   <text x="168" y="1310" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">over rows / columns / features: the axis this block's attention runs across</text>
   <text x="168" y="1330" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">dot: the parameters in that stage, on a log scale shared by every tabfound diagram; the axis runs from the smallest dot to the largest; % is the</text>
   <text x="168" y="1345" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">stage's share of the total</text>
-  <text x="168" y="1365" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">margin colour: the phase, from first (dark) to last (light)</text>
+  <text x="168" y="1365" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">margin colour: the phase, one colour each in stage order</text>
   <text x="168" y="1385" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">output shape: the tensor each stage emits, in the symbols above</text>
 </svg>

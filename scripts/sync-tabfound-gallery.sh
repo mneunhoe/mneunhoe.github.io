@@ -27,13 +27,18 @@ fi
 BG_LIGHT="#f5f5f5"
 BG_DARK="#1d1e20"
 
+# The same four highlights in every view: grDevices::hcl.colors(4, "viridis").
+# The side-by-side figures take the first three.
+HIGHLIGHT="#4B0055,#007094,#00BE7D,#FDE333"
+
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 # The diagrams carry non-ASCII text (×, ·, →), so R needs a UTF-8 locale.
 (cd "$TABFOUND" && LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 Rscript \
   -e 'suppressMessages(devtools::load_all(quiet = TRUE)); source("inst/gallery/make-gallery.R")' \
-  --matrix --background-light="$BG_LIGHT" --background-dark="$BG_DARK" "$TMP")
+  --matrix --background-light="$BG_LIGHT" --background-dark="$BG_DARK" \
+  --highlight="$HIGHLIGHT" "$TMP")
 
 mkdir -p "$DEST"
 rsync -a --delete "$TMP/" "$DEST/"

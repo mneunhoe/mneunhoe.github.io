@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="964" height="2378" viewBox="0 0 964 2378">
   <title>TabFM - classifier</title>
-  <desc>Google  -  column and row stages run twice, then an in-context stack  ·  1.64 B parameters. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; F: feature groups; E: embedding width; n_test: test rows (the rows being predicted). Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; CLS: learned summary token that reads out a row or column; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); SwiGLU: gated linear unit with a Swish activation; RMSNorm: root-mean-square normalisation; KV: keys and values (as in KV cache, KV heads); NaN: not-a-number: undefined values in the input. How to read: × N: the block is stacked N times; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale; the axis runs from the smallest dot to the largest; % is the stage's share of the total; hollow dot: one sublayer's parameters; &quot;/ block&quot; counts one copy of a stacked block; margin colour: the phase, from first (dark) to last (light); output shape: the tensor each stage emits, in the symbols above.</desc>
+  <desc>Google  -  column and row stages run twice, then an in-context stack  ·  1.64 B parameters. Symbols in shapes: B: ensemble members (batch); n: rows in the context (train + test); p: raw features; F: feature groups; E: embedding width; n_test: test rows (the rows being predicted). Abbreviations: ICL: in-context learning: test rows attend to the labelled training rows; CLS: learned summary token that reads out a row or column; RoPE: rotary position embedding; MLP: multilayer perceptron (the feed-forward sublayer); GELU: Gaussian error linear unit (activation); SwiGLU: gated linear unit with a Swish activation; RMSNorm: root-mean-square normalisation; KV: keys and values (as in KV cache, KV heads); NaN: not-a-number: undefined values in the input. How to read: × N: the block is stacked N times; over rows / columns / features: the axis this block's attention runs across; dot: the parameters in that stage, on a log scale; the axis runs from the smallest dot to the largest; % is the stage's share of the total; hollow dot: one sublayer's parameters; &quot;/ block&quot; counts one copy of a stacked block; margin colour: the phase, one colour each in stage order; output shape: the tensor each stage emits, in the symbols above.</desc>
   <rect width="964" height="2378" fill="#1d1e20"/>
   <text x="32" y="42" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="22px" fill="#FCFCFC">TabFM - classifier</text>
   <text x="32" y="66" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="13px" font-style="italic" fill="#C5C6C6">Google  -  column and row stages run twice, then an in-context stack  ·  1.64 B parameters</text>
@@ -16,7 +16,7 @@
   <text x="168" y="244" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">added on the training rows</text>
   <text x="516" y="196" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F, E)</text>
   <line x1="662" y1="196" x2="715.64" y2="196" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="712.14" y="192.5" width="7" height="7" rx="3.5" fill="#336F8F"/>
+  <rect x="712.14" y="192.5" width="7" height="7" rx="3.5" fill="#88578F"/>
   <text x="840" y="196" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">35.8 k</text>
   <text x="168" y="288" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Column set transformer</text>
   <text x="498" y="288" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 3  over rows</text>
@@ -24,180 +24,180 @@
   <text x="168" y="320" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">masked to the training rows</text>
   <text x="182" y="338" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Learned inducing points</text>
   <line x1="662" y1="338" x2="721.15" y2="338" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="719.15" y="336" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="719.15" y="336" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="338" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">65.5 k / block</text>
   <text x="182" y="356" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="356" x2="670.57" y2="356" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="354" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="354" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="356" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="374" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Inducing points attend to the training rows</text>
   <text x="498" y="374" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over rows</text>
   <line x1="662" y1="374" x2="733.83" y2="374" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="731.83" y="372" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="731.83" y="372" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="374" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">263.4 k / block</text>
   <text x="182" y="392" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="392" x2="670.57" y2="392" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="390" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="390" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="392" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="410" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="410" x2="670.57" y2="410" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="408" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="408" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="410" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="428" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="428" x2="743.84" y2="428" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="741.84" y="426" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="741.84" y="426" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="428" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">788.7 k / block</text>
   <text x="182" y="446" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="446" x2="670.57" y2="446" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="444" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="444" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="446" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="464" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="464" x2="670.57" y2="464" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="462" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="462" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="464" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="482" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Rows attend back to the inducing points</text>
   <text x="498" y="482" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over inducing</text>
   <line x1="662" y1="482" x2="733.83" y2="482" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="731.83" y="480" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="731.83" y="480" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="482" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">263.4 k / block</text>
   <text x="182" y="500" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="500" x2="670.57" y2="500" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="498" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="498" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="500" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="518" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="518" x2="670.57" y2="518" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="516" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="516" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="518" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="536" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="536" x2="743.84" y2="536" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="741.84" y="534" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="741.84" y="534" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="536" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">788.7 k / block</text>
   <text x="182" y="554" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="554" x2="670.57" y2="554" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="552" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="552" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="554" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="572" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Output projection, after the stack</text>
   <line x1="662" y1="572" x2="721.18" y2="572" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="719.18" y="570" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="719.18" y="570" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="572" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">65.8 k / block</text>
   <text x="182" y="590" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm, after the stack</text>
   <line x1="662" y1="590" x2="670.57" y2="590" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="588" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="588" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="590" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="516" y="288" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F, E)</text>
   <line x1="662" y1="288" x2="763.18" y2="288" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="759.68" y="284.5" width="7" height="7" rx="3.5" fill="#20928B"/>
+  <rect x="759.68" y="284.5" width="7" height="7" rx="3.5" fill="#386F98"/>
   <text x="840" y="288" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">6.6 M</text>
   <text x="168" y="620" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">CLS columns</text>
   <text x="168" y="636" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">8 learned columns prepended to every row, after the first</text>
   <text x="168" y="652" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">column stage</text>
   <line x1="662" y1="620" x2="689.54" y2="620" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="686.04" y="616.5" width="7" height="7" rx="3.5" fill="#20928B"/>
+  <rect x="686.04" y="616.5" width="7" height="7" rx="3.5" fill="#386F98"/>
   <text x="840" y="620" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">2.0 k</text>
   <text x="168" y="682" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Row encoder</text>
   <text x="498" y="682" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 3  over columns</text>
   <text x="168" y="698" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RoPE over the column order; 8 heads; all columns kept</text>
   <text x="182" y="716" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="716" x2="670.57" y2="716" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="714" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="714" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="716" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="734" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Attention over a row's columns</text>
   <text x="498" y="734" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over columns</text>
   <line x1="662" y1="734" x2="733.83" y2="734" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="731.83" y="732" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="731.83" y="732" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="734" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">263.3 k / block</text>
   <text x="182" y="752" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="752" x2="670.57" y2="752" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="750" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="750" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="752" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="770" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="770" x2="670.57" y2="770" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="768" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="768" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="770" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="788" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="788" x2="743.84" y2="788" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="741.84" y="786" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="741.84" y="786" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="788" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">788.7 k / block</text>
   <text x="182" y="806" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="806" x2="670.57" y2="806" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="804" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="804" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="806" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="824" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm, after the stack</text>
   <line x1="662" y1="824" x2="670.57" y2="824" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="822" width="4" height="4" rx="2" fill="#1d1e20" stroke="#20928B" stroke-width="1"/>
+  <rect x="668.57" y="822" width="4" height="4" rx="2" fill="#1d1e20" stroke="#386F98" stroke-width="1"/>
   <text x="840" y="824" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="516" y="682" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F, E)</text>
   <line x1="662" y1="682" x2="756.49" y2="682" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="752.99" y="678.5" width="7" height="7" rx="3.5" fill="#20928B"/>
+  <rect x="752.99" y="678.5" width="7" height="7" rx="3.5" fill="#386F98"/>
   <text x="840" y="682" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">3.2 M</text>
   <text x="168" y="868" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Column set transformer</text>
   <text x="498" y="868" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 3  over rows</text>
   <text x="168" y="884" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">same shape as pass 1, its own weights</text>
   <text x="182" y="902" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Learned inducing points</text>
   <line x1="662" y1="902" x2="721.15" y2="902" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="719.15" y="900" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="719.15" y="900" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="902" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">65.5 k / block</text>
   <text x="182" y="920" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="920" x2="670.57" y2="920" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="918" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="918" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="920" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="938" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Inducing points attend to the training rows</text>
   <text x="498" y="938" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over rows</text>
   <line x1="662" y1="938" x2="733.83" y2="938" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="731.83" y="936" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="731.83" y="936" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="938" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">263.4 k / block</text>
   <text x="182" y="956" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="956" x2="670.57" y2="956" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="954" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="954" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="956" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="974" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="974" x2="670.57" y2="974" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="972" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="972" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="974" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="992" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="992" x2="743.84" y2="992" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="741.84" y="990" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="741.84" y="990" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="992" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">788.7 k / block</text>
   <text x="182" y="1010" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1010" x2="670.57" y2="1010" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1008" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1008" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1010" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1028" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1028" x2="670.57" y2="1028" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1026" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1026" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1028" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1046" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Rows attend back to the inducing points</text>
   <text x="498" y="1046" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over inducing</text>
   <line x1="662" y1="1046" x2="733.83" y2="1046" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="731.83" y="1044" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="731.83" y="1044" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1046" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">263.4 k / block</text>
   <text x="182" y="1064" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1064" x2="670.57" y2="1064" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1062" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1062" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1064" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1082" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1082" x2="670.57" y2="1082" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1080" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1080" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1082" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1100" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="1100" x2="743.84" y2="1100" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="741.84" y="1098" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="741.84" y="1098" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1100" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">788.7 k / block</text>
   <text x="182" y="1118" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1118" x2="670.57" y2="1118" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1116" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1116" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1118" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1136" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Output projection, after the stack</text>
   <line x1="662" y1="1136" x2="721.18" y2="1136" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="719.18" y="1134" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="719.18" y="1134" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1136" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">65.8 k / block</text>
   <text x="182" y="1154" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm, after the stack</text>
   <line x1="662" y1="1154" x2="670.57" y2="1154" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1152" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1152" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1154" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="516" y="868" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, F, E)</text>
   <line x1="662" y1="868" x2="763.18" y2="868" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="759.68" y="864.5" width="7" height="7" rx="3.5" fill="#3AB876"/>
+  <rect x="759.68" y="864.5" width="7" height="7" rx="3.5" fill="#009788"/>
   <text x="840" y="868" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">6.6 M</text>
   <text x="168" y="1184" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Row encoder, CLS readout</text>
   <text x="498" y="1184" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 3  over columns</text>
@@ -205,41 +205,41 @@
   <text x="168" y="1216" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">width becomes 2048 numbers</text>
   <text x="182" y="1234" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1234" x2="670.57" y2="1234" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1232" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1232" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1234" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1252" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Attention over a row's columns</text>
   <text x="498" y="1252" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over columns</text>
   <line x1="662" y1="1252" x2="733.83" y2="1252" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="731.83" y="1250" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="731.83" y="1250" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1252" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">263.3 k / block</text>
   <text x="182" y="1270" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1270" x2="670.57" y2="1270" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1268" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1268" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1270" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1288" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1288" x2="670.57" y2="1288" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1286" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1286" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1288" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1306" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="1306" x2="743.84" y2="1306" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="741.84" y="1304" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="741.84" y="1304" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1306" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">788.7 k / block</text>
   <text x="182" y="1324" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1324" x2="670.57" y2="1324" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1322" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1322" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1324" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="182" y="1342" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm, after the stack</text>
   <line x1="662" y1="1342" x2="670.57" y2="1342" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="668.57" y="1340" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3AB876" stroke-width="1"/>
+  <rect x="668.57" y="1340" width="4" height="4" rx="2" fill="#1d1e20" stroke="#009788" stroke-width="1"/>
   <text x="840" y="1342" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">256 / block</text>
   <text x="516" y="1184" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, 2048)</text>
   <line x1="662" y1="1184" x2="756.49" y2="1184" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="752.99" y="1180.5" width="7" height="7" rx="3.5" fill="#3AB876"/>
+  <rect x="752.99" y="1180.5" width="7" height="7" rx="3.5" fill="#009788"/>
   <text x="840" y="1184" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">3.2 M</text>
   <text x="168" y="1386" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Target encoder (per row)</text>
   <text x="168" y="1402" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">one-hot over 10 classes -&gt; Linear(2048)</text>
   <line x1="662" y1="1386" x2="711.41" y2="1386" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="707.91" y="1382.5" width="7" height="7" rx="3.5" fill="#92D643"/>
+  <rect x="707.91" y="1382.5" width="7" height="7" rx="3.5" fill="#3fc76a"/>
   <text x="840" y="1386" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">22.5 k</text>
   <text x="168" y="1432" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">In-context learning block</text>
   <text x="498" y="1432" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" font-style="italic" text-anchor="end" fill="#C5C6C6">× 24  over rows</text>
@@ -247,51 +247,51 @@
   <text x="168" y="1464" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">256; SwiGLU 2048 -&gt; 8192</text>
   <text x="182" y="1482" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1482" x2="689.54" y2="1482" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="687.54" y="1480" width="4" height="4" rx="2" fill="#1d1e20" stroke="#92D643" stroke-width="1"/>
+  <rect x="687.54" y="1480" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3fc76a" stroke-width="1"/>
   <text x="840" y="1482" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">2.0 k / block</text>
   <text x="182" y="1500" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">Attention over rows, training-row keys</text>
   <text x="498" y="1500" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" font-style="italic" text-anchor="end" fill="#8F9091">over rows</text>
   <line x1="662" y1="1500" x2="771.72" y2="1500" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="769.72" y="1498" width="4" height="4" rx="2" fill="#1d1e20" stroke="#92D643" stroke-width="1"/>
+  <rect x="769.72" y="1498" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3fc76a" stroke-width="1"/>
   <text x="840" y="1500" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">16.8 M / block</text>
   <text x="182" y="1518" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1518" x2="689.54" y2="1518" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="687.54" y="1516" width="4" height="4" rx="2" fill="#1d1e20" stroke="#92D643" stroke-width="1"/>
+  <rect x="687.54" y="1516" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3fc76a" stroke-width="1"/>
   <text x="840" y="1518" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">2.0 k / block</text>
   <text x="182" y="1536" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1536" x2="689.54" y2="1536" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="687.54" y="1534" width="4" height="4" rx="2" fill="#1d1e20" stroke="#92D643" stroke-width="1"/>
+  <rect x="687.54" y="1534" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3fc76a" stroke-width="1"/>
   <text x="840" y="1536" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">2.0 k / block</text>
   <text x="182" y="1554" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">SwiGLU feed-forward</text>
   <line x1="662" y1="1554" x2="781.74" y2="1554" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="779.74" y="1552" width="4" height="4" rx="2" fill="#1d1e20" stroke="#92D643" stroke-width="1"/>
+  <rect x="779.74" y="1552" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3fc76a" stroke-width="1"/>
   <text x="840" y="1554" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">50.4 M / block</text>
   <text x="182" y="1572" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm</text>
   <line x1="662" y1="1572" x2="689.54" y2="1572" stroke="#2C2D2E" stroke-width="0.6" stroke-linecap="round"/>
-  <rect x="687.54" y="1570" width="4" height="4" rx="2" fill="#1d1e20" stroke="#92D643" stroke-width="1"/>
+  <rect x="687.54" y="1570" width="4" height="4" rx="2" fill="#1d1e20" stroke="#3fc76a" stroke-width="1"/>
   <text x="840" y="1572" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">2.0 k / block</text>
   <text x="516" y="1432" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(B, n, 2048)</text>
   <line x1="662" y1="1432" x2="813.35" y2="1432" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="809.85" y="1428.5" width="7" height="7" rx="3.5" fill="#92D643"/>
+  <rect x="809.85" y="1428.5" width="7" height="7" rx="3.5" fill="#3fc76a"/>
   <text x="840" y="1432" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">1.61 B</text>
   <text x="892" y="1432" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="10.5px" fill="#8F9091">98%</text>
   <text x="168" y="1616" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Decoder MLP</text>
   <text x="168" y="1632" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">RMSNorm, then 2048 -&gt; 4096 -&gt; 10, GELU</text>
   <text x="516" y="1616" dy="0.35em" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11px" fill="#C5C6C6">(n_test, 10)</text>
   <line x1="662" y1="1616" x2="765.45" y2="1616" stroke="#2C2D2E" stroke-width="0.8" stroke-linecap="round"/>
-  <rect x="761.95" y="1612.5" width="7" height="7" rx="3.5" fill="#FDE625"/>
+  <rect x="761.95" y="1612.5" width="7" height="7" rx="3.5" fill="#fde333"/>
   <text x="840" y="1616" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="12px" fill="#FCFCFC">8.4 M</text>
   <text x="168" y="1676" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="14px" fill="#FCFCFC">Class logits</text>
   <text x="168" y="1692" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" fill="#C5C6C6">10 slots; softmax over the classes seen</text>
-  <line x1="158" y1="189" x2="158" y2="251" stroke="#336F8F" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="189" x2="158" y2="251" stroke="#88578F" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="196" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Embed</text>
-  <line x1="158" y1="281" x2="158" y2="831" stroke="#20928B" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="281" x2="158" y2="831" stroke="#386F98" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="288" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Pass 1</text>
-  <line x1="158" y1="861" x2="158" y2="1349" stroke="#3AB876" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="861" x2="158" y2="1349" stroke="#009788" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="868" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Pass 2</text>
-  <line x1="158" y1="1379" x2="158" y2="1579" stroke="#92D643" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="1379" x2="158" y2="1579" stroke="#3fc76a" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="1386" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">In-context</text>
-  <line x1="158" y1="1609" x2="158" y2="1639" stroke="#FDE625" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="158" y1="1609" x2="158" y2="1639" stroke="#fde333" stroke-width="2.5" stroke-linecap="round"/>
   <text x="150" y="1616" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11.5px" font-style="italic" text-anchor="end" fill="#C5C6C6">Decode</text>
   <line x1="670.57" y1="1720" x2="813.35" y2="1720" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
   <line x1="683" y1="1720" x2="683" y2="1724" stroke="#8F9091" stroke-width="0.8" stroke-linecap="round"/>
@@ -374,6 +374,6 @@
   <text x="168" y="2236" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">over rows / columns / features: the axis this block's attention runs across</text>
   <text x="168" y="2256" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">dot: the parameters in that stage, on a log scale; the axis runs from the smallest dot to the largest; % is the stage's share of the total</text>
   <text x="168" y="2276" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">hollow dot: one sublayer's parameters; &quot;/ block&quot; counts one copy of a stacked block</text>
-  <text x="168" y="2296" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">margin colour: the phase, from first (dark) to last (light)</text>
+  <text x="168" y="2296" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">margin colour: the phase, one colour each in stage order</text>
   <text x="168" y="2316" dy="0.35em" font-family="'ETBembo', 'ET Book', Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif" font-size="11px" fill="#C5C6C6">output shape: the tensor each stage emits, in the symbols above</text>
 </svg>
