@@ -5,7 +5,7 @@
 
 default:
   model: tabicl
-  style: cards
+  style: schematic
   detail: overview
   compare: [tabpfn3, tabicl]
 
