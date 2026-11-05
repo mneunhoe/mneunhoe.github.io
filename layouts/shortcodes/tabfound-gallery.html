@@ -1,0 +1,126 @@
+{{- /*
+  The tabfound architecture gallery: every model in every style, detail
+  and theme, and every pair side by side, with controls to pick the view.
+
+  Figures and figures/manifest.json are page resources, synced from
+  tabfound by scripts/sync-tabfound-gallery.sh. The words come from
+  data/tabfound_gallery.yaml. Every file the manifest names is looked up
+  here, so a missing figure fails the build instead of showing a broken
+  image.
+*/ -}}
+{{- $page := .Page -}}
+{{- $manifestRes := $page.Resources.Get "figures/manifest.json" -}}
+{{- if not $manifestRes -}}
+  {{- errorf "tabfound-gallery: %s has no figures/manifest.json; run scripts/sync-tabfound-gallery.sh" $page.File.Path -}}
+{{- end -}}
+{{- $m := $manifestRes | transform.Unmarshal -}}
+{{- $text := site.Data.tabfound_gallery -}}
+{{- $base := path.Dir $manifestRes.RelPermalink -}}
+
+{{- range $m.models -}}
+  {{- $key := .key -}}
+  {{- if not (index $text.models $key) -}}
+    {{- errorf "tabfound-gallery: model %q has no entry in data/tabfound_gallery.yaml" $key -}}
+  {{- end -}}
+  {{- range $style, $views := .views -}}
+    {{- range $views -}}
+      {{- $detail := .detail -}}
+      {{- range $m.themes -}}
+        {{- $f := printf "figures/%s/%s-%s-%s.svg" $key $style $detail . -}}
+        {{- with $page.Resources.Get $f -}}{{- $_ := .RelPermalink -}}{{- else -}}
+          {{- errorf "tabfound-gallery: missing %s" $f -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- range $m.compare -}}
+  {{- $pair := . -}}
+  {{- range $m.themes -}}
+    {{- $f := printf "figures/compare/%s_vs_%s-%s.svg" $pair.a $pair.b . -}}
+    {{- with $page.Resources.Get $f -}}{{- $_ := .RelPermalink -}}{{- else -}}
+      {{- errorf "tabfound-gallery: missing %s" $f -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* The view drawn before the script runs, and without it. */ -}}
+{{- $d := $text.default -}}
+{{- $dm := index $text.models $d.model -}}
+{{- $ds := index $text.styles $d.style -}}
+{{- $dsize := dict -}}
+{{- range $m.models -}}{{- if eq .key $d.model -}}
+  {{- range index .views $d.style -}}{{- if eq .detail $d.detail -}}{{- $dsize = . -}}{{- end -}}{{- end -}}
+  {{- $dm = merge $dm (dict "subtitle" .subtitle) -}}
+{{- end -}}{{- end -}}
+{{- $dsrc := printf "%s/%s/%s-%s-light.svg" $base $d.model $d.style $d.detail -}}
+
+<div class="tf-gallery" id="tf-gallery">
+  <div class="tf-controls" hidden>
+    <div class="tf-mode" role="group" aria-label="What to show">
+      <button type="button" data-mode="single" aria-pressed="true">One model</button>
+      <button type="button" data-mode="compare" aria-pressed="false">Compare two</button>
+    </div>
+
+    <div class="tf-row" data-for="single">
+      <label class="tf-select">
+        <span>Model</span>
+        <select id="tf-model"></select>
+      </label>
+    </div>
+    <div class="tf-row" data-for="compare" hidden>
+      <label class="tf-select">
+        <span>Model</span>
+        <select id="tf-a"></select>
+      </label>
+      <label class="tf-select">
+        <span>Compare with</span>
+        <select id="tf-b"></select>
+      </label>
+    </div>
+
+    <fieldset class="tf-seg" data-for="single" data-name="style">
+      <legend>Style</legend>
+    </fieldset>
+    <fieldset class="tf-seg" data-for="single" data-name="detail">
+      <legend>Detail</legend>
+    </fieldset>
+    <fieldset class="tf-seg" data-name="theme">
+      <legend>Theme</legend>
+    </fieldset>
+  </div>
+
+  <div class="tf-caption" aria-live="polite">
+    <h3 class="tf-title">{{ $dm.name }}{{ with $ds }} <span class="tf-title-style">· {{ .label }}</span>{{ end }}</h3>
+    <p class="tf-sub">{{ $dm.subtitle }}</p>
+    <p class="tf-note tf-model-note">{{ $dm.note }}</p>
+    <p class="tf-note tf-style-note">{{ with $ds }}<strong>{{ .question }}.</strong> {{ .note }}{{ end }}</p>
+  </div>
+
+  <figure class="tf-figure">
+    <a class="tf-link" href="{{ $dsrc }}" target="_blank" rel="noopener">
+      <img class="tf-img" src="{{ $dsrc }}" width="{{ $dsize.width }}" height="{{ $dsize.height }}"
+           alt="{{ $dm.name }} in the {{ $d.style }} style: {{ $dm.subtitle }}" decoding="async">
+    </a>
+    <figcaption class="tf-actions">
+      <a class="tf-open" href="{{ $dsrc }}" target="_blank" rel="noopener">Open full size</a>
+      <a class="tf-download" href="{{ $dsrc }}" download>Download SVG</a>
+      <button type="button" class="tf-copy" hidden>Copy link to this view</button>
+    </figcaption>
+  </figure>
+
+  <noscript>
+    <p>The picker needs JavaScript. Every model in the default style:</p>
+    <ul>
+      {{- range $m.models }}
+      <li><a href="{{ $base }}/{{ .key }}/cards-overview-light.svg">{{ (index $text.models .key).name }}</a></li>
+      {{- end }}
+    </ul>
+  </noscript>
+</div>
+
+<script type="application/json" id="tf-gallery-data">
+  {{- dict "base" $base "manifest" $m "text" $text | jsonify | safeJS -}}
+</script>
+{{- $js := resources.Get "js/tabfound-gallery.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

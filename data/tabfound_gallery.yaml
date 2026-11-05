@@ -1,0 +1,165 @@
+# Text for the tabfound architecture gallery
+# (content/software/tabfound-gallery). The figures and their manifest come
+# from tabfound via scripts/sync-tabfound-gallery.sh; this file holds the
+# words the page shows beside them. Keys match the manifest's model keys.
+
+default:
+  model: tabicl
+  style: cards
+  detail: overview
+  compare: [tabpfn3, tabicl]
+
+models:
+  tabpfn:
+    name: TabPFN v2.5
+    family: TabPFN
+    note: >-
+      One embedding pass, then 24 identical layers that each attend twice,
+      across a row's feature groups and then down each feature's column,
+      and a two-layer decoder. The two attentions are the architecture:
+      nothing else in the stack moves information between rows or between
+      columns. In the schematic, its norms sit above the circled plus,
+      because v2.5 normalises after each residual add.
+  tabpfn26:
+    name: TabPFN v2.6
+    family: TabPFN
+    note: >-
+      The same two-way shape, restated: RMSNorm instead of an affine-free
+      LayerNorm, no biases anywhere, and the target promoted from a side
+      input to a column of its own that the prediction is read back out of.
+      The whole parameter difference from v2.5 is those norms:
+      24 × 3 × 192 = 13,824.
+  tabpfn3:
+    name: TabPFN v3
+    family: TabPFN
+    note: >-
+      v3 gives up the single stack that attends both ways and splits the
+      work into three: summarise each column's distribution over the rows,
+      aggregate a row's columns into a fixed-width vector, then run a deep
+      in-context stack over rows. 51.4 M of its 53.2 M parameters sit in
+      that last stage, at a width of 512, because the aggregator reads out
+      four CLS tokens of 128.
+  tabpfn35:
+    name: TabPFN v3.5
+    family: TabPFN
+    note: >-
+      v3's three stages with two visible changes. The cell embedder reads
+      each value through a learned Fourier bank and its in-context ECDF
+      rank, so a column's scale is accounted for before stage 1 begins. And
+      the decoder carries both heads, because one checkpoint serves both
+      tasks: the diagram draws the classification head and names the other.
+  tabicl:
+    name: TabICL v2
+    family: TabICL
+    note: >-
+      A cousin of TabPFN v3 (column stage, row stage, in-context stage),
+      arrived at independently and different in every detail. Labelled rows
+      are held apart from test rows by slicing, never by masking: a labelled
+      row cannot see a test row at any stage, which is what makes its KV
+      cache exact.
+  tabfm:
+    name: TabFM
+    family: TabFM
+    note: >-
+      TabFM alternates: summarise the columns, mix the row, do both again,
+      then learn in context. The second row stage collapses a table of any
+      width to a fixed 2048 numbers. At 1.64 B parameters it is by far the
+      largest model here; an in-context width of 2048 and a 4× SwiGLU
+      feed-forward across 24 blocks account for nearly all of it.
+  mitra:
+    name: Mitra
+    family: Mitra
+    note: >-
+      The flattest of them all: no column, row or in-context stage, just one
+      stack of twelve identical layers, each attending across rows and then
+      across features with an MLP after each. The target is feature column
+      1, and the input transform is a fixed quantile-rank mapping with no
+      weights at all.
+  kumo:
+    name: Kumo Tabular small
+    family: Kumo Tabular
+    note: >-
+      NVIDIA's single-table model. Every cell is its own token, embedded
+      with its two neighbours and with a learned projection of what was
+      missing, so the network sees missingness rather than a filled-in
+      value. Column and row blocks take turns: a column block summarises a
+      column's context rows through inducing points, a row block mixes the
+      row's tokens with RoPE.
+  kumo-medium:
+    name: Kumo Tabular medium
+    family: Kumo Tabular
+    note: >-
+      Medium widens the cells to 256 and doubles the depth of the in-context
+      stack, which then needs two things small does not: a projection from
+      the 1024 readout numbers down to the in-context width of 512, and
+      grouped-query attention, in which the test rows read the context
+      through two of the eight key/value heads.
+  kumo-large:
+    name: Kumo Tabular large
+    family: Kumo Tabular
+    note: >-
+      Large drops medium's projection again, 1024 wide throughout, and
+      keeps the grouped-query attention.
+
+styles:
+  cards:
+    label: Cards
+    question: What runs, in order
+    note: >-
+      Blocks stacked in the order they run, each repeated block drawn once
+      as a deck with its repeat count, and each stage's output shape and
+      exact parameter count in the margin. Every attention block is tagged
+      with its axis: down a column, across a row, or over the rows of the
+      table.
+  tufte:
+    label: Tufte
+    question: How big each stage is
+    note: >-
+      Each stage is a row of a table, and its parameter count is a dot on a
+      log scale that runs from 100 to 1 B in every diagram, so two models'
+      dots can be compared by eye. Phases are coloured in stage order.
+  glyphs:
+    label: Glyphs
+    question: What each stage does to the table
+    note: >-
+      Each stage is a small table, training rows above and test rows below,
+      with the part its attention runs over picked out: a column for
+      attention across rows, a row for attention across features, dots for
+      inducing points.
+  icicle:
+    label: Icicle
+    question: Where the parameters are
+    note: >-
+      Three bands on one linear scale: the phases, the stages within them,
+      and each stage's sublayers summed over all of its stacked blocks. A
+      block's width is its share of the model.
+  schematic:
+    label: Schematic
+    question: How a block runs
+    note: >-
+      The convention of the papers. Data flows upwards, every repeated block
+      is opened into its steps inside a container marked with its repeat
+      count, and each residual connection runs up the right-hand side to a
+      circled plus. Attention steps are dark; what feeds a step without
+      being one, such as a RoPE table or inducing points, comes in from the
+      left.
+
+details:
+  overview:
+    label: Overview
+  full:
+    label: Full
+    note: >-
+      Every repeated block expanded into its sublayers, in the order they
+      run.
+  none: >-
+    Icicle has no separate full view: it sums each stage's sublayers either
+    way.
+
+compare:
+  note: >-
+    The two models side by side, stage against stage. Stages are paired by
+    their kind and the axis their attention runs over, not by name, and the
+    chip between each pair says whether they match, how their depths differ,
+    or that a stage has no counterpart. Each pair is drawn once, so the model
+    that comes first in the list is always on the left.

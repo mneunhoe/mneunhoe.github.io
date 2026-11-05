@@ -1,0 +1,27 @@
+{{- /*
+  One gallery figure in both themes, shown by the site's theme and linked
+  to that view in the gallery.
+
+    {{< tabfound-figure model="tabpfn3" style="cards" detail="overview" caption="..." >}}
+*/ -}}
+{{- $gallery := site.GetPage "/software/tabfound-gallery" -}}
+{{- if not $gallery -}}{{- errorf "tabfound-figure: no gallery page at content/software/tabfound-gallery" -}}{{- end -}}
+{{- $model := .Get "model" -}}
+{{- $style := .Get "style" | default "cards" -}}
+{{- $detail := .Get "detail" | default "overview" -}}
+{{- $light := $gallery.Resources.Get (printf "figures/%s/%s-%s-light.svg" $model $style $detail) -}}
+{{- $dark := $gallery.Resources.Get (printf "figures/%s/%s-%s-dark.svg" $model $style $detail) -}}
+{{- if not (and $light $dark) -}}
+  {{- errorf "tabfound-figure: no %s %s %s figure in the gallery" $model $style $detail -}}
+{{- end -}}
+{{- $name := (index site.Data.tabfound_gallery.models $model).name -}}
+{{- $href := printf "%s#model=%s&style=%s&detail=%s" $gallery.RelPermalink $model $style $detail -}}
+<figure class="tf-pair">
+  <a href="{{ $href }}">
+    <img class="tf-light" src="{{ $light.RelPermalink }}" alt="{{ $name }} architecture diagram, {{ $style }} style" loading="lazy">
+    <img class="tf-dark" src="{{ $dark.RelPermalink }}" alt="{{ $name }} architecture diagram, {{ $style }} style" loading="lazy">
+  </a>
+  {{- with .Get "caption" }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>

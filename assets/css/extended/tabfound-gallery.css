@@ -1,0 +1,254 @@
+/* tabfound architecture gallery (layouts/shortcodes/tabfound-gallery.html)
+   and the light/dark figure pair (layouts/shortcodes/tabfound-figure.html). */
+
+/* The diagrams are 860-964 px wide, wider than the text column, so the
+   gallery breaks out of it up to 1000 px. */
+.tf-gallery {
+    width: min(1000px, calc(100vw - 32px));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 32px 0;
+    scroll-margin-top: 16px;
+}
+
+.tf-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    align-items: flex-end;
+    padding: 16px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.tf-controls[hidden],
+.tf-controls [hidden] {
+    display: none;
+}
+
+.tf-mode {
+    flex-basis: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.tf-mode button {
+    padding: 6px 14px;
+    border: 1px solid var(--tertiary);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--secondary);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.tf-mode button[aria-pressed="true"] {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--theme);
+}
+
+.tf-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+}
+
+.tf-select,
+.tf-seg legend {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.tf-select select {
+    min-width: 230px;
+    max-width: 100%;
+    padding: 6px 8px;
+    font-size: 15px;
+    color: var(--primary);
+    background: var(--theme);
+    border: 1px solid var(--tertiary);
+    border-radius: 6px;
+}
+
+.tf-seg {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tf-seg legend {
+    padding: 0;
+    margin-bottom: 4px;
+    float: left;
+    width: 100%;
+}
+
+/* Radio buttons drawn as a segmented control. */
+.tf-seg input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.tf-seg label {
+    padding: 6px 12px;
+    font-size: 15px;
+    color: var(--secondary);
+    border: 1px solid var(--tertiary);
+    margin-left: -1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tf-seg label:first-of-type {
+    margin-left: 0;
+    border-radius: 6px 0 0 6px;
+}
+
+.tf-seg label:last-of-type {
+    border-radius: 0 6px 6px 0;
+}
+
+.tf-seg input:checked + label {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--theme);
+    position: relative;
+}
+
+.tf-seg input:focus-visible + label {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    position: relative;
+}
+
+.tf-seg input:disabled + label {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.tf-caption {
+    margin: 24px 0 16px;
+}
+
+.post-content .tf-caption h3.tf-title {
+    margin: 0 0 4px;
+    font-size: 24px;
+}
+
+.tf-title-style {
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+.post-content .tf-caption p {
+    margin: 0 0 10px;
+    max-width: 720px;
+}
+
+.post-content .tf-caption p.tf-sub {
+    color: var(--secondary);
+    font-size: 15px;
+}
+
+.tf-figure {
+    margin: 0;
+}
+
+.post-content .tf-figure img,
+.post-content .tf-pair img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.tf-figure img {
+    transition: opacity 0.15s;
+}
+
+.tf-figure img.tf-loading {
+    opacity: 0.4;
+}
+
+.tf-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.tf-actions button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* A figure drawn in both themes; the site's theme picks one. */
+.tf-pair {
+    margin: 24px auto;
+    max-width: 460px;
+}
+
+.tf-pair .tf-dark,
+[data-theme="dark"] .tf-pair .tf-light {
+    display: none !important;
+}
+
+[data-theme="dark"] .tf-pair .tf-dark {
+    display: block !important;
+}
+
+.post-content .tf-pair figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+/* Breaking out only helps where there is room beside the column; below
+   that, 100vw (which counts the scrollbar) would push it off centre. */
+@media (max-width: 1080px) {
+    .tf-gallery {
+        width: auto;
+        left: 0;
+        transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .tf-controls {
+        padding: 12px;
+    }
+
+    .tf-select,
+    .tf-select select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .tf-row {
+        width: 100%;
+    }
+}
