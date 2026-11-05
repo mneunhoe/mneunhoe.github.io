@@ -16,4 +16,4 @@ You can find more about my [tabfound R package here](/software/tabfound/).
 
 {{< tabfound-gallery >}}
 
-Layout after Sebastian Raschka's [LLM architecture gallery](https://sebastianraschka.com/llm-architecture-gallery/).
+Heavily inspired by Sebastian Raschka's [LLM architecture gallery](https://sebastianraschka.com/llm-architecture-gallery/).
