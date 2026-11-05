@@ -136,6 +136,11 @@ copyright = "Marcel Neunhoeffer"
     url = "/software/"
     weight = 25
   [[menu.main]]
+    identifier = "gallery"
+    name = "Model Gallery"
+    url = "/software/tabfound/gallery/"
+    weight = 27
+  [[menu.main]]
     identifier = "talks"
     name = "Talks"
     url = "/talks/"
