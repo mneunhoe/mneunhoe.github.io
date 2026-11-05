@@ -210,16 +210,16 @@
   <text x="510.6" y="1106" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">columns</text>
   <text x="40" y="1156" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#626262">ABBREVIATIONS</text>
   <text x="40" y="1174" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">ICL</text>
-  <text x="93.66" y="1174" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">in-context learning: test rows attend to the labelled training</text>
-  <text x="93.66" y="1189" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">rows</text>
+  <text x="109.82" y="1174" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">in-context learning: test rows attend to the labelled</text>
+  <text x="109.82" y="1189" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">training rows</text>
   <text x="40" y="1209" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">MLP</text>
-  <text x="93.66" y="1209" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">multilayer perceptron (the feed-forward sublayer)</text>
+  <text x="109.82" y="1209" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">multilayer perceptron (the feed-forward sublayer)</text>
   <text x="40" y="1229" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">GELU</text>
-  <text x="93.66" y="1229" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">Gaussian error linear unit (activation)</text>
+  <text x="109.82" y="1229" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">Gaussian error linear unit (activation)</text>
   <text x="457" y="1174" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">RMSNorm</text>
-  <text x="510.65" y="1174" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">root-mean-square normalisation</text>
+  <text x="526.82" y="1174" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">root-mean-square normalisation</text>
   <text x="457" y="1209" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" font-weight="600" fill="#090909">KV</text>
-  <text x="510.65" y="1209" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">keys and values (as in KV cache, KV heads)</text>
+  <text x="526.82" y="1209" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">keys and values (as in KV cache, KV heads)</text>
   <text x="40" y="1259" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10.5px" font-weight="600" fill="#626262">HOW TO READ</text>
   <rect x="40" y="1272" width="10" height="10" rx="2" fill="#4b0055"/>
   <text x="56" y="1277" dy="0.35em" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="11px" fill="#535353">model A, its stages and its fact values</text>
